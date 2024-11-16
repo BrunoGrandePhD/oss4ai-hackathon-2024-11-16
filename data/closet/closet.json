@@ -1,42 +1,6 @@
 {
   "items": [
     {
-      "category": "T-shirt",
-      "color": "red",
-      "style": "casual",
-      "pattern": "solid",
-      "season": "spring, summer",
-      "occasion": "casual outings, everyday wear",
-      "description": "A plain red T-shirt with a round neckline and short sleeves, suitable for casual and comfortable wear during warmer seasons.",
-      "id": "1",
-      "date_added": "2024-11-16T13:17:01.315433",
-      "image_filename": "03616__16966.jpg"
-    },
-    {
-      "category": "pants",
-      "color": "blue",
-      "style": "casual",
-      "pattern": "solid",
-      "season": "spring, summer, fall",
-      "occasion": "casual outings, everyday wear",
-      "description": "These are solid blue casual pants suitable for various everyday activities. They have a straightforward design without any patterns, making them versatile for different seasons like spring, summer, and fall.",
-      "id": "2",
-      "date_added": "2024-11-16T13:17:46.470300",
-      "image_filename": "images.jpg"
-    },
-    {
-      "category": "t-shirt",
-      "color": "red",
-      "style": "casual",
-      "pattern": "solid",
-      "season": "spring, summer",
-      "occasion": "casual outings, everyday wear",
-      "description": "A classic red t-shirt with a solid color design, featuring short sleeves and a round neckline. Suitable for casual and everyday wear during warmer seasons.",
-      "id": "3",
-      "date_added": "2024-11-16T13:32:36.239038",
-      "image_filename": "03616__16966.jpg"
-    },
-    {
       "category": "pants",
       "color": "blue",
       "style": "casual",
