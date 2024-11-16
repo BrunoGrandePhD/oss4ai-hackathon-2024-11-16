@@ -81,19 +81,18 @@ class FashnClient:
             else:
                 print("sleeping")
                 sleep(2)
-
-        if response["error"] is not None:
-            print(response["error"])
-            return response["error"]
+        error = response["error"]
+        if error is not None:
+            return "", error
 
         # Print the output URL to download the enhanced image
         output_url = response["output"][0]
-        return output_url
+        return output_url, error
 
 
-client = FashnClient.getInstance()
-# result = client.wear_it("person.jpg", "blue_dress.jpg", "tops")
-result = client.wear_it("person.jpg", "blue_dress.jpg", "one-pieces")
-print(
-    result
-)  # {'name': 'PoseError', 'message': 'Failed to detect body pose in garment image.'}
+# client = FashnClient.getInstance()
+# # result = client.wear_it("person.jpg", "blue_dress.jpg", "tops")
+# result = client.wear_it("person.jpg", "blue_dress.jpg", "one-pieces")
+# print(
+#     result
+# )  # {'name': 'PoseError', 'message': 'Failed to detect body pose in garment image.'}

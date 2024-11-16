@@ -8,6 +8,7 @@ from src.services.llm.classifier import process_clothing_image
 from src.services.llm.outfit_recommender import generate_outfit_recommendations
 from src.services.llm.prompt_templates import clothing_item
 from src.utils.storage import ClosetStorage
+from src.services.fashn.fashnClient import FashnClient
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -17,6 +18,7 @@ logger = logging.getLogger(__name__)
 api = Blueprint("api", __name__)
 socketio = SocketIO()
 closet_storage = ClosetStorage()
+fashnClient = FashnClient.getInstance()
 
 # Configure upload settings
 UPLOAD_FOLDER = "uploads/images"
@@ -186,3 +188,22 @@ def get_outfit_recommendations():
             jsonify({"error": f"Error getting outfit recommendations: {str(e)}"}),
             500,
         )
+
+
+@api.route("/wearit", methods=["POST"])
+def wear_item():
+    """Wear an item of clothing"""
+
+    try:
+        data = request.get_json()
+        person_path = data.get("person_path")
+        cloth_path = data.get("cloth_path")
+        category = data.get("category")
+        image_url, error = fashnClient.wear_it(person_path, cloth_path, category)
+        if error:
+            return jsonify({"error": error.message}), 500
+        else:
+            return (jsonify({"image_url": image_url})), 200
+    except Exception as e:
+        logger.error(f"Error wearing item: {str(e)}")
+        return jsonify({"error": f"Error wearing item: {str(e)}"}), 500
