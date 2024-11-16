@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfit Recommendations</title>
+    <style>
+        .outfit-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .outfit-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: transform 0.2s;
+        }
+
+        .outfit-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .outfit-details {
+            padding: 1rem 0;
+        }
+
+        .outfit-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .outfit-description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 0.5rem;
+        }
+
+        .outfit-occasions {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .occasion-tag {
+            background: #f0f0f0;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.8rem;
+            color: #444;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .error {
+            color: #dc3545;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="outfitResults" class="outfit-container">
+        <div class="loading">Loading outfit recommendations...</div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const outfitResults = document.getElementById('outfitResults');
+            
+            try {
+                const response = await fetch('/closet/outfits');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch outfit recommendations');
+                }
+                
+                const outfits = await response.json();
+                outfitResults.innerHTML = ''; // Clear loading message
+                
+                outfits.forEach(outfit => {
+                    const outfitCard = document.createElement('div');
+                    outfitCard.className = 'outfit-card';
+                    
+                    const occasionsHtml = outfit.occasions
+                        .map(occasion => `<span class="occasion-tag">${occasion}</span>`)
+                        .join('');
+                    
+                    outfitCard.innerHTML = `
+                        <div class="outfit-details">
+                            <h3 class="outfit-title">Outfit Combination</h3>
+                            <p class="outfit-description">${outfit.style_description}</p>
+                            <div class="outfit-occasions">${occasionsHtml}</div>
+                            <p class="outfit-description">Items: ${outfit.items.join(', ')}</p>
+                            <p class="outfit-description">Styling Tips: ${outfit.styling_tips}</p>
+                        </div>
+                    `;
+                    outfitResults.appendChild(outfitCard);
+                });
+                
+            } catch (error) {
+                outfitResults.innerHTML = `
+                    <div class="error">
+                        Error loading outfit recommendations. Please try again later.
+                    </div>
+                `;
+                console.error('Error:', error);
+            }
+        });
+    </script>
+</body>
+</html> 

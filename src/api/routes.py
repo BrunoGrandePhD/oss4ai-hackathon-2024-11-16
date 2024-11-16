@@ -4,11 +4,11 @@ import os
 from flask import Blueprint, jsonify, render_template, request, send_from_directory
 from flask_socketio import SocketIO
 
+from src.services.fashn.fashnClient import FashnClient
 from src.services.llm.classifier import process_clothing_image
 from src.services.llm.outfit_recommender import generate_outfit_recommendations
 from src.services.llm.prompt_templates import clothing_item
 from src.utils.storage import ClosetStorage
-from src.services.fashn.fashnClient import FashnClient
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -208,3 +208,13 @@ def wear_item():
     except Exception as e:
         logger.error(f"Error wearing item: {str(e)}")
         return jsonify({"error": f"Error wearing item: {str(e)}"}), 500
+
+
+@api.route("/outfits")
+def outfits():
+    """Render the outfits template"""
+    try:
+        return render_template("outfits.html")
+    except Exception as e:
+        logger.error(f"Error rendering outfits template: {str(e)}")
+        return jsonify({"error": f"Error rendering outfits template: {str(e)}"}), 500

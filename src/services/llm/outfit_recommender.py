@@ -54,7 +54,7 @@ def generate_outfit_recommendations(
         }
 
         payload = {
-            "model": "gpt-4",
+            "model": "gpt-4o",
             "messages": [
                 {
                     "role": "system",

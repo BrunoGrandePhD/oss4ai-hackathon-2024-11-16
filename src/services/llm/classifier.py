@@ -11,26 +11,6 @@ from src.services.llm.prompt_templates import clothing_item
 logger = logging.getLogger(__name__)
 
 
-class LLMHandler:
-    _instance = None
-    _llm = None
-
-    @classmethod
-    def get_llm(cls):
-        if cls._llm is None:
-            api_key = os.getenv("OPENAI_API_KEY")
-            if not api_key:
-                logger.error("OpenAI API key not found in environment variables")
-                raise ValueError("OPENAI_API_KEY environment variable is not set")
-
-            cls._llm = ChatOpenAI(
-                model_name="gpt-4",
-                api_key=api_key,
-                temperature=0.7,
-            )
-        return cls._llm
-
-
 def analyze_image_with_vision_api(image_path: str) -> str:
     """Analyze image using OpenAI's vision API directly"""
     api_key = os.getenv("OPENAI_API_KEY")
