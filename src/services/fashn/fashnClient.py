@@ -1,5 +1,4 @@
 import base64
-import hashlib
 import os
 import logging
 from time import sleep
@@ -47,7 +46,7 @@ class FashnClient:
         return base64_string
 
     # https://developer.Fashnni.ai/api/#section/Examples
-    def _upload_image(self, model_image_path, cloth_image_path):
+    def _upload_image(self, model_image_path, cloth_image_path, clothing_type):
         encoded_image_model = self._get_image_md5_content(model_image_path)
         encoded_image_cloth = self._get_image_md5_content(cloth_image_path)
 
@@ -56,10 +55,9 @@ class FashnClient:
             json={
                 "model_image": encoded_image_model,
                 "garment_image": encoded_image_cloth,
-                "category": "tops",  # TODO support other types
+                "category": clothing_type,  # TODO support other types 'tops' | 'bottoms' | 'one-pieces'
             },
         )
-        print("[SANTINA] response", response.json())
         body = response.json()
         task_id = body["id"]
 
@@ -71,25 +69,31 @@ class FashnClient:
         )
         return response.json()
 
-    def wear_it(self, model_image_path, cloth_image_path):
-        task_id = self._upload_image(model_image_path, cloth_image_path)
+    def wear_it(self, model_image_path, cloth_image_path, clothing_type):
+        task_id = self._upload_image(model_image_path, cloth_image_path, clothing_type)
         response = None
 
         # Get the image
         for i in range(50):
             response = self._get_image(task_id)
-            print("[SANTINA] response", response)
             if response["status"] == "completed" or response["error"] is not None:
                 break
             else:
                 print("sleeping")
                 sleep(2)
 
+        if response["error"] is not None:
+            print(response["error"])
+            return response["error"]
+
         # Print the output URL to download the enhanced image
         output_url = response["output"][0]
-        print(output_url)
         return output_url
 
 
 client = FashnClient.getInstance()
-result = client.wear_it("person.jpg", "red_shirt.jpg")
+# result = client.wear_it("person.jpg", "blue_dress.jpg", "tops")
+result = client.wear_it("person.jpg", "blue_dress.jpg", "one-pieces")
+print(
+    result
+)  # {'name': 'PoseError', 'message': 'Failed to detect body pose in garment image.'}
