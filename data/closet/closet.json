@@ -1,3 +1,65 @@
 {
-  "items": []
+  "items": [
+    {
+      "type": "shirt",
+      "category": "tops",
+      "description": "A long-sleeve button-up shirt in an olive green color. It has a classic collar and appears to be made from a lightweight, slightly crinkled fabric.",
+      "colors": [
+        {
+          "name": "olive green",
+          "hex": "#808000",
+          "temperature": "neutral",
+          "intensity": "medium"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "solid",
+          "scale": "none",
+          "density": "none",
+          "direction": "none",
+          "regularity": "none"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "slightly crinkled",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "woven"
+        }
+      ],
+      "structure": {
+        "silhouette": "loose",
+        "length": "hip",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "collar",
+          "buttons"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": false
+        },
+        "style_categories": [
+          "casual",
+          "classic"
+        ],
+        "dress_code_compatibility": [
+          "smart_casual",
+          "weekend"
+        ]
+      },
+      "id": "1",
+      "date_added": "2024-11-16T14:38:04.488229",
+      "image_filename": "clothes63_jpg.rf.2948c23e9025272f31842f30ba5385ca.jpg",
+      "image_path": "data/images/clothes63_jpg.rf.2948c23e9025272f31842f30ba5385ca.jpg"
+    }
+  ]
 }

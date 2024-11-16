@@ -128,12 +128,6 @@ def serve_image(filename):
     return send_from_directory(closet_storage.images_dir, filename)
 
 
-@api.route("/images/<path:filename>")
-def serve_image(filename):
-    """Serve images from the data/images directory"""
-    return send_from_directory(closet_storage.images_dir, filename)
-
-
 @api.route("/closet", methods=["GET"])
 def get_closet():
     """Get all items in the closet"""
