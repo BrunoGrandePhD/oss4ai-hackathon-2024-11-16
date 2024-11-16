@@ -55,6 +55,13 @@
             max-height: 300px;
             border-radius: 4px;
         }
+        #analysisResult {
+            margin-top: 1rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -62,7 +69,7 @@
         <h1>Personal Stylist</h1>
         <p>Upload an image of your clothing item to get started</p>
         
-        <form class="upload-form" action="/upload_image" method="post" enctype="multipart/form-data">
+        <form class="upload-form" action="/upload_image" method="post" enctype="multipart/form-data" id="uploadForm">
             <div class="file-input">
                 <input type="file" name="file" id="file" accept=".jpg,.jpeg,.png" onchange="previewImage(this)">
                 <p>Click to select or drag and drop an image</p>
@@ -70,8 +77,10 @@
             <div class="preview" id="imagePreview">
                 <img id="preview" src="#" alt="Preview">
             </div>
-            <button type="submit" class="submit-button">Upload Image</button>
+            <button type="submit" class="submit-button">Analyze Image</button>
         </form>
+
+        <div id="analysisResult"></div>
     </div>
 
     <script>
@@ -90,6 +99,43 @@
                 reader.readAsDataURL(input.files[0]);
             }
         }
+
+        document.getElementById('uploadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const resultDiv = document.getElementById('analysisResult');
+            
+            try {
+                const response = await fetch('/upload_image', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    resultDiv.innerHTML = `
+                        <h3>Analysis Results:</h3>
+                        <p><strong>Category:</strong> ${data.analysis.category}</p>
+                        <p><strong>Color:</strong> ${data.analysis.color}</p>
+                        <p><strong>Style:</strong> ${data.analysis.style}</p>
+                        <p><strong>Pattern:</strong> ${data.analysis.pattern}</p>
+                        <p><strong>Season:</strong> ${data.analysis.season}</p>
+                        <p><strong>Occasion:</strong> ${data.analysis.occasion}</p>
+                        <p><strong>Description:</strong> ${data.analysis.description}</p>
+                    `;
+                } else {
+                    resultDiv.innerHTML = `<p style="color: red;">Error: ${data.error}</p>`;
+                }
+                
+                resultDiv.style.display = 'block';
+                
+            } catch (error) {
+                resultDiv.innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+                resultDiv.style.display = 'block';
+            }
+        });
     </script>
 </body>
 </html>

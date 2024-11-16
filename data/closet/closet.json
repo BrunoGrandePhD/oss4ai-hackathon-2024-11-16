@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "category": "pants",
+      "color": "blue",
+      "style": "casual",
+      "pattern": "solid",
+      "season": "all seasons",
+      "occasion": "casual outings, everyday wear",
+      "description": "These are straight-leg blue pants with a solid color, suitable for casual occasions and everyday wear across all seasons.",
+      "id": "4",
+      "date_added": "2024-11-16T13:38:36.310164",
+      "image_filename": "images.jpg",
+      "image_path": "data\\images\\images.jpg"
+    }
+  ]
+}
