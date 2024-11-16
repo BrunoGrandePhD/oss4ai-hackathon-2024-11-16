@@ -4,14 +4,16 @@ from flask_socketio import SocketIO
 from werkzeug.utils import secure_filename
 import os
 from src.services.llm.classifier import process_clothing_image
+from src.utils.storage import ClosetStorage
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Initialize Blueprint
+# Initialize Blueprint and storage
 api = Blueprint('api', __name__)
 socketio = SocketIO()
+closet_storage = ClosetStorage()
 
 # Configure upload settings
 UPLOAD_FOLDER = 'uploads/images'
@@ -78,10 +80,14 @@ def upload_image():
                     # Process the image
                     analysis_result = process_clothing_image(filepath)
                     
-                    logger.info(f"Successfully processed image: {filename}")
+                    # Save to closet
+                    item_id = closet_storage.add_item(analysis_result, filename)
+                    
+                    logger.info(f"Successfully processed and stored image: {filename}")
                     return jsonify({
-                        'message': 'Image processed successfully',
+                        'message': 'Image processed and stored successfully',
                         'filename': filename,
+                        'item_id': item_id,
                         'analysis': analysis_result
                     }), 200
                     
@@ -128,3 +134,33 @@ def upload_image():
                     "description": f"Unexpected error: {str(e)}"
                 }
             }), 500
+
+@api.route("/closet", methods=["GET"])
+def get_closet():
+    """Get all items in the closet"""
+    try:
+        items = closet_storage.get_all_items()
+        return jsonify({
+            'items': items
+        }), 200
+    except Exception as e:
+        logger.error(f"Error getting closet items: {e}")
+        return jsonify({
+            'error': f'Error getting closet items: {str(e)}'
+        }), 500
+
+@api.route("/closet/<item_id>", methods=["GET"])
+def get_item(item_id):
+    """Get a specific item from the closet"""
+    try:
+        item = closet_storage.get_item(item_id)
+        if item is None:
+            return jsonify({
+                'error': 'Item not found'
+            }), 404
+        return jsonify(item), 200
+    except Exception as e:
+        logger.error(f"Error getting item {item_id}: {e}")
+        return jsonify({
+            'error': f'Error getting item: {str(e)}'
+        }), 500
