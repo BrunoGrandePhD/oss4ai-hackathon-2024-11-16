@@ -2,11 +2,7 @@
 name = "ecc-triage-automation"
 version = "0.1.0"
 description = "Emergency Call Center Triage Automation"
-authors = [
-    "Benjamin Sobel <ultradaoto@users.noreply.github.com>",
-    "Eric Simpson <ericssimpson@users.noreply.github.com>",
-    "Michael Zhang <Heronalps@users.noreply.github.com>",
-]
+authors = []
 package-mode = false
 
 [tool.poetry.dependencies]
