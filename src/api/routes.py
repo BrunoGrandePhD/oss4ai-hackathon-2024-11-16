@@ -24,58 +24,107 @@ def allowed_file(filename):
     """Check if the file extension is allowed"""
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-@api.route("/upload_image", methods=["POST"])
+@api.route("/", methods=["GET"])
+def home():
+    """Render the image upload page"""
+    return render_template('image_upload.html')
+
+@api.route("/upload_image", methods=["GET", "POST"])
 def upload_image():
     """Handle image upload and processing for clothing analysis"""
-    try:
-        if 'file' not in request.files:
-            logger.error("No file part in request")
-            return jsonify({'error': 'No file part'}), 400
+    if request.method == "GET":
+        return render_template('image_upload.html')
         
-        file = request.files['file']
-        
-        if file.filename == '':
-            logger.error("No selected file")
-            return jsonify({'error': 'No selected file'}), 400
-        
-        if file and allowed_file(file.filename):
-            try:
-                filename = secure_filename(file.filename)
-                filepath = os.path.join(UPLOAD_FOLDER, filename)
-                file.save(filepath)
-                
-                # Process the image with the LLM
-                analysis_result = process_clothing_image(filepath)
-                
-                # Log the analysis result for debugging
-                logger.info(f"Analysis result: {analysis_result}")
-                
-                # Check if we got an error response
-                if analysis_result.get('category') == 'error':
-                    return jsonify({
-                        'error': 'Analysis failed',
-                        'details': analysis_result.get('description', 'Unknown error')
-                    }), 500
-                
+    if request.method == "POST":
+        try:
+            if 'file' not in request.files:
+                logger.error("No file part in request")
                 return jsonify({
-                    'message': 'Image processed successfully',
-                    'filename': filename,
-                    'analysis': analysis_result
-                }), 200
-                
-            except Exception as e:
-                logger.error(f"Error processing file: {str(e)}")
-                return jsonify({
-                    'error': 'Error processing file',
-                    'details': str(e)
-                }), 500
-        else:
-            logger.error("Invalid file type")
-            return jsonify({'error': 'Invalid file type'}), 400
+                    'error': 'No file part',
+                    'analysis': {
+                        "category": "unknown",
+                        "color": "unknown",
+                        "style": "unknown",
+                        "pattern": "unknown",
+                        "season": "unknown",
+                        "occasion": "unknown",
+                        "description": "No file uploaded"
+                    }
+                }), 400
             
-    except Exception as e:
-        logger.error(f"Unexpected error: {str(e)}")
-        return jsonify({
-            'error': 'Unexpected error',
-            'details': str(e)
-        }), 500
+            file = request.files['file']
+            
+            if file.filename == '':
+                logger.error("No selected file")
+                return jsonify({
+                    'error': 'No selected file',
+                    'analysis': {
+                        "category": "unknown",
+                        "color": "unknown",
+                        "style": "unknown",
+                        "pattern": "unknown",
+                        "season": "unknown",
+                        "occasion": "unknown",
+                        "description": "No file selected"
+                    }
+                }), 400
+            
+            if file and allowed_file(file.filename):
+                try:
+                    filename = secure_filename(file.filename)
+                    filepath = os.path.join(UPLOAD_FOLDER, filename)
+                    file.save(filepath)
+                    
+                    # Process the image
+                    analysis_result = process_clothing_image(filepath)
+                    
+                    logger.info(f"Successfully processed image: {filename}")
+                    return jsonify({
+                        'message': 'Image processed successfully',
+                        'filename': filename,
+                        'analysis': analysis_result
+                    }), 200
+                    
+                except Exception as e:
+                    logger.error(f"Error processing file: {str(e)}", exc_info=True)
+                    return jsonify({
+                        'error': f'Error processing file: {str(e)}',
+                        'analysis': {
+                            "category": "error",
+                            "color": "unknown",
+                            "style": "unknown",
+                            "pattern": "unknown",
+                            "season": "unknown",
+                            "occasion": "unknown",
+                            "description": f"Error processing image: {str(e)}"
+                        }
+                    }), 500
+            else:
+                logger.error("Invalid file type")
+                return jsonify({
+                    'error': 'Invalid file type',
+                    'analysis': {
+                        "category": "unknown",
+                        "color": "unknown",
+                        "style": "unknown",
+                        "pattern": "unknown",
+                        "season": "unknown",
+                        "occasion": "unknown",
+                        "description": "Invalid file type"
+                    }
+                }), 400
+                
+        except Exception as e:
+            logger.error(f"Unexpected error: {str(e)}", exc_info=True)
+            return jsonify({
+                'error': f'Unexpected error: {str(e)}',
+                'analysis': {
+                    "category": "error",
+                    "color": "unknown",
+                    "style": "unknown",
+                    "pattern": "unknown",
+                    "season": "unknown",
+                    "occasion": "unknown",
+                    "description": f"Unexpected error: {str(e)}"
+                }
+            }), 500

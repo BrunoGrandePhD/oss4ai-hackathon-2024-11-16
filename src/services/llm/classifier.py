@@ -41,7 +41,7 @@ def analyze_image_with_vision_api(image_path: str) -> str:
     }
 
     payload = {
-        "model": "gpt-4o",  # Using standard GPT-4 for now
+        "model": "gpt-4o",
         "messages": [
             {
                 "role": "user",
