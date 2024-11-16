@@ -1,6 +1,6 @@
 import json
-import os
 import logging
+import os
 from datetime import datetime
 from pathlib import Path
 
@@ -48,8 +48,8 @@ class ClosetStorage:
 
         filename = secure_filename(image_file.filename)
         filepath = self.images_dir / filename
-        image_file.save(filepath.as_posix())
-        return filename, filepath
+        image_file.save(filepath)
+        return filename, filepath.as_posix()
 
     def add_item(self, item_data, image_file):
         """Add a new clothing item to the closet"""
