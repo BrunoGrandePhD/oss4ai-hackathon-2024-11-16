@@ -1,4 +1,0 @@
-openai
-SpeechRecognition
-pyaudio
-ascii_magic
