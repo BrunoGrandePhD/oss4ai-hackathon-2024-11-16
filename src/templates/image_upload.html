@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Stylist - Image Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .upload-container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+        .upload-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .file-input {
+            border: 2px dashed #ccc;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .file-input:hover {
+            border-color: #888;
+        }
+        .submit-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+        .preview {
+            margin-top: 1rem;
+            display: none;
+        }
+        .preview img {
+            max-width: 100%;
+            max-height: 300px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="upload-container">
+        <h1>Personal Stylist</h1>
+        <p>Upload an image of your clothing item to get started</p>
+        
+        <form class="upload-form" action="/upload_image" method="post" enctype="multipart/form-data">
+            <div class="file-input">
+                <input type="file" name="file" id="file" accept=".jpg,.jpeg,.png" onchange="previewImage(this)">
+                <p>Click to select or drag and drop an image</p>
+            </div>
+            <div class="preview" id="imagePreview">
+                <img id="preview" src="#" alt="Preview">
+            </div>
+            <button type="submit" class="submit-button">Upload Image</button>
+        </form>
+    </div>
+
+    <script>
+        function previewImage(input) {
+            const preview = document.getElementById('preview');
+            const previewDiv = document.getElementById('imagePreview');
+            
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                
+                reader.onload = function(e) {
+                    preview.src = e.target.result;
+                    previewDiv.style.display = 'block';
+                }
+                
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+</body>
+</html>

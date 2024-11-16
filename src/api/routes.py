@@ -1,7 +1,8 @@
 import logging
-from flask import Blueprint, request, render_template
+from flask import Blueprint, request, render_template, jsonify
 from flask_socketio import SocketIO
-from src.services.twilio.handlers import TwilioHandler
+from werkzeug.utils import secure_filename
+import os
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -11,41 +12,51 @@ logger = logging.getLogger(__name__)
 api = Blueprint('api', __name__)
 socketio = SocketIO()
 
+# Configure upload settings
+UPLOAD_FOLDER = 'uploads/images'
+ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
+
+# Create upload folder if it doesn't exist
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+
+def allowed_file(filename):
+    """Check if the file extension is allowed"""
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
 @api.route("/", methods=["GET"])
 def home():
-    """Test route to verify server is running"""
-    return "Twilio Flask app is running!"
+    """Render the image upload page"""
+    return render_template('image_upload.html')
 
-@api.route("/answer", methods=["POST"])
-def answer_call():
-    """Handle incoming phone calls"""
-    logger.info("Received incoming call")
-    handler = TwilioHandler()
-    return handler.handle_incoming_call()
-
-@api.route("/call_results", methods=["GET"])
-def call_results():
-    """Display the results of the call processing"""
-    return render_template('emergency_dashboard.html')
-
-@api.route("/test_socket", methods=["GET"])
-def test_socket():
-    """Test the websocket connection"""
-    test_data = {
-        "priority": "GREEN",
-        "department": "POLICEDEPT",
-        "summary": "This is a test message",
-        "confidence": 95,
-    }
-    socketio.emit("send_message", test_data)
-    return test_data
-
-@api.route("/process_speech", methods=["POST"])
-def process_speech():
-    """Process the speech input from the caller"""
-    logger.info("Processing speech from call")
-    speech_result = request.values.get("SpeechResult", "")
-    logger.info(f"Received speech: {speech_result}")
+@api.route("/upload_image", methods=["POST"])
+def upload_image():
+    """Handle image upload for clothing analysis"""
+    if 'file' not in request.files:
+        logger.error("No file part in request")
+        return jsonify({'error': 'No file part'}), 400
     
-    handler = TwilioHandler()
-    return handler.handle_speech_processing(speech_result, socketio)
+    file = request.files['file']
+    
+    if file.filename == '':
+        logger.error("No selected file")
+        return jsonify({'error': 'No selected file'}), 400
+    
+    if file and allowed_file(file.filename):
+        try:
+            filename = secure_filename(file.filename)
+            filepath = os.path.join(UPLOAD_FOLDER, filename)
+            file.save(filepath)
+            
+            logger.info(f"Successfully saved image: {filename}")
+            return jsonify({
+                'message': 'Image uploaded successfully',
+                'filename': filename,
+                'filepath': filepath
+            }), 200
+            
+        except Exception as e:
+            logger.error(f"Error saving file: {str(e)}")
+            return jsonify({'error': 'Error saving file'}), 500
+    else:
+        logger.error("Invalid file type")
+        return jsonify({'error': 'Invalid file type'}), 400
