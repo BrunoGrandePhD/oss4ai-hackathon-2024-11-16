@@ -1,5 +1,0 @@
-services:
-  phoenix:
-    image: arizephoenix/phoenix:nightly
-    ports:
-      - "6006:6006"
