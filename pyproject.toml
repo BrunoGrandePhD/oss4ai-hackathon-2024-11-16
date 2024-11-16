@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "ecc-triage-automation"
+name = "my-personal-stylist"
 version = "0.1.0"
-description = "Emergency Call Center Triage Automation"
+description = ""
 authors = []
 package-mode = false
 
