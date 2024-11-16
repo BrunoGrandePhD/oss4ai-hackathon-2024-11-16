@@ -11,7 +11,7 @@
       "id": "2",
       "date_added": "2024-11-16T13:44:13.913964",
       "image_filename": "red_shirt.jpg",
-      "image_path": "data\\images\\red_shirt.jpg"
+      "image_path": "data/images/red_shirt.jpg"
     },
     {
       "category": "pants",
@@ -24,7 +24,7 @@
       "id": "2",
       "date_added": "2024-11-16T13:44:35.537583",
       "image_filename": "blue_pants.jpg",
-      "image_path": "data\\images\\blue_pants.jpg"
+      "image_path": "data/images/blue_pants.jpg"
     }
   ]
 }
