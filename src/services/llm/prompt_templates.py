@@ -1,40 +1,68 @@
-from langchain.prompts import (
-    ChatPromptTemplate,
-    HumanMessagePromptTemplate,
-    SystemMessagePromptTemplate,
-)
-
-# Define prompts for clothing analysis
-system_prompt = SystemMessagePromptTemplate.from_template("""
-You are a professional fashion analyst and personal stylist. Your task is to analyze clothing items from images and provide detailed, structured information about them. 
-
-For each item, you should identify:
-1. The category of clothing
-2. Primary colors
-3. Style classification
-4. Patterns or prints
-5. Appropriate seasons
-6. Suitable occasions
-7. A brief but detailed description
-
-Please be specific and professional in your analysis. Focus on objective features but also include style advice where relevant.
-
-Respond in JSON format with these fields:
-{
-    "category": "type of clothing",
-    "color": "primary colors",
-    "style": "style classification",
-    "pattern": "pattern description",
-    "season": "appropriate seasons",
-    "occasion": "suitable occasions",
-    "description": "detailed description"
+clothing_item = {
+    "type": "shirt, pants, dress, shoes, etc.",
+    "category": "tops, bottoms, or one-pieces",
+    "description": "detailed description of the item",
+    "colors": [
+        {
+            "name": "navy blue",
+            "hex": "#000080",
+            "temperature": "warm, cool, neutral",
+            "intensity": "light, medium, dark",
+        }
+    ],
+    "patterns": [
+        {
+            "type": "solid, striped, floral, plaid, polka_dot, abstract, etc.",
+            "scale": "none, small, medium, large",
+            "density": "none, sparse, medium, dense",
+            "direction": "none, vertical, horizontal, diagonal, irregular",
+            "regularity": "none, regular, irregular",
+        }
+    ],
+    "textures": [
+        {
+            "surface": "smooth, rough, ribbed, quilted, etc.",
+            "appearance": "shiny, matte, transparent, opaque",
+            "visual_weight": "none, light, medium, heavy",
+            "material_appearance": "none, woven, knitted, leather, denim, etc.",
+        }
+    ],
+    "structure": {
+        "silhouette": "fitted, loose, structured, flowing",
+        "length": "crop, hip, knee, ankle, floor",
+        "cut": "straight, curved, asymmetric",
+        "volume": "slim, regular, voluminous",
+        "details": ["none", "collar, chest_pocket, buttons"],
+    },
+    "derived_properties": {
+        "formality": "casual, business casual, formal, etc.",
+        "season_suitability": {
+            "spring": True,
+            "summer": True,
+            "fall": True,
+            "winter": False,
+        },
+        "style_categories": ["preppy", "classic"],
+        "dress_code_compatibility": ["smart_casual", "business_casual", "weekend"],
+    },
 }
-{format_instructions}""")
 
-# Note: The human prompt will include the base64 encoded image
-user_prompt = HumanMessagePromptTemplate.from_template("""
-<image>{image_base64}</image>
-Please analyze this clothing item and provide a structured analysis.
-""")
 
-prompt_clothing = ChatPromptTemplate.from_messages([system_prompt, user_prompt])
+outfit_recommendations = {
+    "outfits": [
+        {
+            "items": ["item_id1", "item_id2"],
+            "style_description": "description",
+            "occasions": ["occasion1", "occasion2"],
+            "styling_tips": "specific styling advice",
+        }
+    ]
+}
+
+outfit_recommender_system_prompt = """You are a professional fashion stylist. Create outfit combinations
+from the available clothing items. For each outfit, provide:
+1. List of items used
+2. Style description
+3. Occasion suitability
+4. Styling tips
+"""

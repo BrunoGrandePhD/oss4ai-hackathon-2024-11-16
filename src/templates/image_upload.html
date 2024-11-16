@@ -62,6 +62,30 @@
             border-radius: 4px;
             display: none;
         }
+        .analysis-section {
+            margin-bottom: 1rem;
+        }
+        .color-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .color-swatch {
+            width: 20px;
+            height: 20px;
+        }
+        .pattern-item {
+            margin-bottom: 0.5rem;
+        }
+        .texture-item {
+            margin-bottom: 0.5rem;
+        }
+        .structure-item {
+            margin-bottom: 0.5rem;
+        }
+        .properties-item {
+            margin-bottom: 0.5rem;
+        }
     </style>
 </head>
 <body>
@@ -117,13 +141,65 @@
                 if (response.ok) {
                     resultDiv.innerHTML = `
                         <h3>Analysis Results:</h3>
-                        <p><strong>Category:</strong> ${data.analysis.category}</p>
-                        <p><strong>Color:</strong> ${data.analysis.color}</p>
-                        <p><strong>Style:</strong> ${data.analysis.style}</p>
-                        <p><strong>Pattern:</strong> ${data.analysis.pattern}</p>
-                        <p><strong>Season:</strong> ${data.analysis.season}</p>
-                        <p><strong>Occasion:</strong> ${data.analysis.occasion}</p>
-                        <p><strong>Description:</strong> ${data.analysis.description}</p>
+                        <div class="analysis-section">
+                            <p><strong>Type:</strong> ${data.analysis.type}</p>
+                            <p><strong>Category:</strong> ${data.analysis.category}</p>
+                            <p><strong>Description:</strong> ${data.analysis.description}</p>
+                            
+                            <h4>Colors</h4>
+                            ${data.analysis.colors.map(color => `
+                                <div class="color-item">
+                                    <p>Name: ${color.name}</p>
+                                    <div class="color-swatch" style="background-color: ${color.hex}"></div>
+                                    <p>Temperature: ${color.temperature}</p>
+                                    <p>Intensity: ${color.intensity}</p>
+                                </div>
+                            `).join('')}
+                            
+                            <h4>Patterns</h4>
+                            ${data.analysis.patterns.map(pattern => `
+                                <div class="pattern-item">
+                                    <p>Type: ${pattern.type}</p>
+                                    <p>Scale: ${pattern.scale}</p>
+                                    <p>Density: ${pattern.density}</p>
+                                    <p>Direction: ${pattern.direction}</p>
+                                    <p>Regularity: ${pattern.regularity}</p>
+                                </div>
+                            `).join('')}
+                            
+                            <h4>Textures</h4>
+                            ${data.analysis.textures.map(texture => `
+                                <div class="texture-item">
+                                    <p>Surface: ${texture.surface}</p>
+                                    <p>Appearance: ${texture.appearance}</p>
+                                    <p>Visual Weight: ${texture.visual_weight}</p>
+                                    <p>Material: ${texture.material_appearance}</p>
+                                </div>
+                            `).join('')}
+                            
+                            <h4>Structure</h4>
+                            <div class="structure-item">
+                                <p>Silhouette: ${data.analysis.structure.silhouette}</p>
+                                <p>Length: ${data.analysis.structure.length}</p>
+                                <p>Cut: ${data.analysis.structure.cut}</p>
+                                <p>Volume: ${data.analysis.structure.volume}</p>
+                                <p>Details: ${data.analysis.structure.details.join(', ')}</p>
+                            </div>
+                            
+                            <h4>Properties</h4>
+                            <div class="properties-item">
+                                <p>Formality: ${data.analysis.derived_properties.formality}</p>
+                                <p>Season Suitability:</p>
+                                <ul>
+                                    ${Object.entries(data.analysis.derived_properties.season_suitability)
+                                        .map(([season, suitable]) => 
+                                            `<li>${season}: ${suitable ? '✓' : '✗'}</li>`
+                                        ).join('')}
+                                </ul>
+                                <p>Style Categories: ${data.analysis.derived_properties.style_categories.join(', ')}</p>
+                                <p>Dress Codes: ${data.analysis.derived_properties.dress_code_compatibility.join(', ')}</p>
+                            </div>
+                        </div>
                     `;
                 } else {
                     resultDiv.innerHTML = `<p style="color: red;">Error: ${data.error}</p>`;
