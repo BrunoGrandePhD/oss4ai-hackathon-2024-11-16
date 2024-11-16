@@ -1,17 +1,30 @@
 {
   "items": [
     {
+      "category": "T-shirt",
+      "color": "red",
+      "style": "casual",
+      "pattern": "solid",
+      "season": "spring, summer",
+      "occasion": "casual outings, everyday wear",
+      "description": "A simple red T-shirt with a solid color design, suitable for casual settings and warm weather.",
+      "id": "2",
+      "date_added": "2024-11-16T13:44:13.913964",
+      "image_filename": "red_shirt.jpg",
+      "image_path": "data\\images\\red_shirt.jpg"
+    },
+    {
       "category": "pants",
       "color": "blue",
       "style": "casual",
       "pattern": "solid",
       "season": "all seasons",
-      "occasion": "casual outings, everyday wear",
-      "description": "These are straight-leg blue pants with a solid color, suitable for casual occasions and everyday wear across all seasons.",
-      "id": "4",
-      "date_added": "2024-11-16T13:38:36.310164",
-      "image_filename": "images.jpg",
-      "image_path": "data\\images\\images.jpg"
+      "occasion": "casual outings, daily wear",
+      "description": "These are blue casual pants with a solid pattern, suitable for everyday casual wear across all seasons.",
+      "id": "2",
+      "date_added": "2024-11-16T13:44:35.537583",
+      "image_filename": "blue_pants.jpg",
+      "image_path": "data\\images\\blue_pants.jpg"
     }
   ]
 }
