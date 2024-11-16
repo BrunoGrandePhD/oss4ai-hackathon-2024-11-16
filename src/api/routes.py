@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 api = Blueprint("api", __name__)
 socketio = SocketIO()
 closet_storage = ClosetStorage()
-fashnClient = FashnClient.getInstance()
+
 
 # Configure upload settings
 UPLOAD_FOLDER = "uploads/images"
@@ -195,6 +195,7 @@ def wear_item():
     """Wear an item of clothing"""
 
     try:
+        fashnClient = FashnClient.getInstance()
         data = request.get_json()
         person_path = data.get("person_path")
         cloth_path = data.get("cloth_path")
