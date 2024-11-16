@@ -1,7 +1,6 @@
 import logging
-from flask import Blueprint, request, render_template, jsonify
+from flask import Blueprint, request, render_template, jsonify, send_from_directory
 from flask_socketio import SocketIO
-from werkzeug.utils import secure_filename
 import os
 from src.services.llm.classifier import process_clothing_image
 from src.utils.storage import ClosetStorage
@@ -15,12 +14,8 @@ api = Blueprint('api', __name__)
 socketio = SocketIO()
 closet_storage = ClosetStorage()
 
-# Configure upload settings
-UPLOAD_FOLDER = 'uploads/images'
+# Configure allowed file extensions
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
-
-# Create upload folder if it doesn't exist
-os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 def allowed_file(filename):
     """Check if the file extension is allowed"""
@@ -73,15 +68,14 @@ def upload_image():
             
             if file and allowed_file(file.filename):
                 try:
-                    filename = secure_filename(file.filename)
-                    filepath = os.path.join(UPLOAD_FOLDER, filename)
-                    file.save(filepath)
+                    # Save image and get filepath
+                    filename, filepath = closet_storage.save_image(file)
                     
                     # Process the image
-                    analysis_result = process_clothing_image(filepath)
+                    analysis_result = process_clothing_image(str(filepath))
                     
-                    # Save to closet
-                    item_id = closet_storage.add_item(analysis_result, filename)
+                    # Save to closet with original file
+                    item_id = closet_storage.add_item(analysis_result, file)
                     
                     logger.info(f"Successfully processed and stored image: {filename}")
                     return jsonify({
@@ -134,6 +128,11 @@ def upload_image():
                     "description": f"Unexpected error: {str(e)}"
                 }
             }), 500
+
+@api.route("/images/<path:filename>")
+def serve_image(filename):
+    """Serve images from the data/images directory"""
+    return send_from_directory(closet_storage.images_dir, filename)
 
 @api.route("/closet", methods=["GET"])
 def get_closet():

@@ -8,13 +8,20 @@ logger = logging.getLogger(__name__)
 
 class ClosetStorage:
     def __init__(self):
-        self.storage_dir = Path('data/closet')
-        self.closet_file = self.storage_dir / 'closet.json'
+        # Define base data directory
+        self.data_dir = Path('data')
+        self.closet_dir = self.data_dir / 'closet'
+        self.images_dir = self.data_dir / 'images'
+        self.closet_file = self.closet_dir / 'closet.json'
         self._ensure_storage_exists()
     
     def _ensure_storage_exists(self):
-        """Ensure storage directory and file exist"""
-        self.storage_dir.mkdir(parents=True, exist_ok=True)
+        """Ensure all required directories and files exist"""
+        # Create directories
+        self.closet_dir.mkdir(parents=True, exist_ok=True)
+        self.images_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Initialize closet.json if it doesn't exist
         if not self.closet_file.exists():
             self.closet_file.write_text('{"items": []}')
     
@@ -34,15 +41,28 @@ class ClosetStorage:
         with open(self.closet_file, 'w') as f:
             json.dump(closet_data, f, indent=2)
     
-    def add_item(self, item_data, image_filename):
+    def save_image(self, image_file):
+        """Save an image file to the images directory"""
+        from werkzeug.utils import secure_filename
+        filename = secure_filename(image_file.filename)
+        filepath = self.images_dir / filename
+        image_file.save(filepath)
+        return filename, filepath
+    
+    def add_item(self, item_data, image_file):
         """Add a new clothing item to the closet"""
         try:
+            # Save the image first
+            filename, filepath = self.save_image(image_file)
+            
+            # Load current closet
             closet = self._load_closet()
             
             # Add metadata to the item
-            item_data['id'] = str(len(closet['items']) + 1)  # Simple ID generation
+            item_data['id'] = str(len(closet['items']) + 1)
             item_data['date_added'] = datetime.now().isoformat()
-            item_data['image_filename'] = image_filename
+            item_data['image_filename'] = filename
+            item_data['image_path'] = str(filepath)
             
             # Add to closet
             closet['items'].append(item_data)
