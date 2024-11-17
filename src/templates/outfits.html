@@ -71,6 +71,7 @@
     </style>
 </head>
 <body>
+    <h1 style="text-align: center; margin: 2rem 0; color: #333; font-size: 2rem;">Your Outfit Recommendations</h1>
     <div id="outfitResults" class="outfit-container">
         <div class="loading">Loading outfit recommendations...</div>
     </div>
@@ -101,7 +102,6 @@
                             <h3 class="outfit-title">Outfit Combination</h3>
                             <p class="outfit-description">${outfit.style_description}</p>
                             <div class="outfit-occasions">${occasionsHtml}</div>
-                            <p class="outfit-description">Items: ${outfit.items.join(', ')}</p>
                             <p class="outfit-description">Styling Tips: ${outfit.styling_tips}</p>
                         </div>
                     `;

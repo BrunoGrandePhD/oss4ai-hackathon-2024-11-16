@@ -3,285 +3,20 @@
     {
       "type": "shirt",
       "category": "tops",
-      "description": "A long-sleeve button-up shirt in an olive green color. It has a classic collar and appears to be made from a lightweight, slightly crinkled fabric.",
+      "description": "A short-sleeved, color-blocked T-shirt with a bold brand logo printed on the front.",
       "colors": [
         {
-          "name": "olive green",
-          "hex": "#808000",
-          "temperature": "neutral",
-          "intensity": "medium"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "solid",
-          "scale": "none",
-          "density": "none",
-          "direction": "none",
-          "regularity": "none"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "slightly crinkled",
-          "appearance": "matte",
-          "visual_weight": "light",
-          "material_appearance": "woven"
-        }
-      ],
-      "structure": {
-        "silhouette": "loose",
-        "length": "hip",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "collar",
-          "buttons"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": true,
-          "fall": true,
-          "winter": false
-        },
-        "style_categories": [
-          "casual",
-          "classic"
-        ],
-        "dress_code_compatibility": [
-          "smart_casual",
-          "weekend"
-        ]
-      },
-      "id": "1",
-      "date_added": "2024-11-16T14:38:04.488229",
-      "image_filename": "clothes63_jpg.rf.2948c23e9025272f31842f30ba5385ca.jpg",
-      "image_path": "data/images/clothes63_jpg.rf.2948c23e9025272f31842f30ba5385ca.jpg"
-    },
-    {
-      "type": "shirt",
-      "category": "tops",
-      "description": "A colorful plaid button-up shirt with a collar and chest pockets.",
-      "colors": [
-        {
-          "name": "pink",
-          "hex": "#FFC0CB",
+          "name": "red",
+          "hex": "#FF0000",
           "temperature": "warm",
           "intensity": "medium"
-        },
-        {
-          "name": "blue",
-          "hex": "#0000FF",
-          "temperature": "cool",
-          "intensity": "medium"
-        },
-        {
-          "name": "yellow",
-          "hex": "#FFFF00",
-          "temperature": "warm",
-          "intensity": "light"
         },
         {
           "name": "white",
           "hex": "#FFFFFF",
           "temperature": "neutral",
           "intensity": "light"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "plaid",
-          "scale": "medium",
-          "density": "dense",
-          "direction": "irregular",
-          "regularity": "regular"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "smooth",
-          "appearance": "matte",
-          "visual_weight": "light",
-          "material_appearance": "woven"
-        }
-      ],
-      "structure": {
-        "silhouette": "fitted",
-        "length": "hip",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "collar",
-          "chest_pocket",
-          "buttons"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": true,
-          "fall": true,
-          "winter": false
         },
-        "style_categories": [
-          "preppy",
-          "classic"
-        ],
-        "dress_code_compatibility": [
-          "smart_casual",
-          "business_casual",
-          "weekend"
-        ]
-      },
-      "id": "2",
-      "date_added": "2024-11-16T14:42:43.915776",
-      "image_filename": "clothes65_jpg.rf.5eb35e961f7768bccf96d6ae9fff3c0a.jpg",
-      "image_path": "data/images/clothes65_jpg.rf.5eb35e961f7768bccf96d6ae9fff3c0a.jpg"
-    },
-    {
-      "type": "pants",
-      "category": "bottoms",
-      "description": "A pair of gradient jeans with a black upper half that transitions into a light gray or white towards the bottom.",
-      "colors": [
-        {
-          "name": "black",
-          "hex": "#000000",
-          "temperature": "neutral",
-          "intensity": "dark"
-        },
-        {
-          "name": "light gray",
-          "hex": "#D3D3D3",
-          "temperature": "cool",
-          "intensity": "light"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "gradient",
-          "scale": "medium",
-          "density": "medium",
-          "direction": "vertical",
-          "regularity": "irregular"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "smooth",
-          "appearance": "matte",
-          "visual_weight": "medium",
-          "material_appearance": "denim"
-        }
-      ],
-      "structure": {
-        "silhouette": "fitted",
-        "length": "ankle",
-        "cut": "straight",
-        "volume": "slim",
-        "details": [
-          "buttons",
-          "pockets"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": true,
-          "fall": true,
-          "winter": false
-        },
-        "style_categories": [
-          "streetwear",
-          "trendy"
-        ],
-        "dress_code_compatibility": [
-          "smart_casual",
-          "weekend"
-        ]
-      },
-      "id": "3",
-      "date_added": "2024-11-16T14:48:19.191699",
-      "image_filename": "clothes93_jpg.rf.35cc0c5837f6181dc3aed2761a741f5d.jpg",
-      "image_path": "data/images/clothes93_jpg.rf.35cc0c5837f6181dc3aed2761a741f5d.jpg"
-    },
-    {
-      "type": "hoodie",
-      "category": "tops",
-      "description": "A casual, long-sleeve hoodie made of soft fabric, featuring a front zipper and two pockets. The inside of the hood has a contrasting light blue lining.",
-      "colors": [
-        {
-          "name": "light gray",
-          "hex": "#D3D3D3",
-          "temperature": "neutral",
-          "intensity": "light"
-        },
-        {
-          "name": "light blue",
-          "hex": "#ADD8E6",
-          "temperature": "cool",
-          "intensity": "light"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "solid",
-          "scale": "none",
-          "density": "none",
-          "direction": "none",
-          "regularity": "none"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "smooth",
-          "appearance": "matte",
-          "visual_weight": "light",
-          "material_appearance": "knitted"
-        }
-      ],
-      "structure": {
-        "silhouette": "loose",
-        "length": "hip",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "hood",
-          "front zipper",
-          "pockets"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": false,
-          "fall": true,
-          "winter": true
-        },
-        "style_categories": [
-          "athleisure",
-          "casual"
-        ],
-        "dress_code_compatibility": [
-          "weekend",
-          "athletic"
-        ]
-      },
-      "id": "4",
-      "date_added": "2024-11-16T14:48:24.792499",
-      "image_filename": "clothes55_jpg.rf.9950e04bb3aec4d155d62f8d8cbcdd19.jpg",
-      "image_path": "data/images/clothes55_jpg.rf.9950e04bb3aec4d155d62f8d8cbcdd19.jpg"
-    },
-    {
-      "type": "pants",
-      "category": "bottoms",
-      "description": "Navy blue pajama pants with a football motif pattern, featuring an elastic waistband and loose fit suitable for casual wear.",
-      "colors": [
         {
           "name": "navy blue",
           "hex": "#000080",
@@ -291,139 +26,11 @@
       ],
       "patterns": [
         {
-          "type": "abstract",
-          "scale": "medium",
+          "type": "solid",
+          "scale": "large",
           "density": "medium",
-          "direction": "irregular",
-          "regularity": "irregular"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "smooth",
-          "appearance": "matte",
-          "visual_weight": "light",
-          "material_appearance": "woven"
-        }
-      ],
-      "structure": {
-        "silhouette": "loose",
-        "length": "ankle",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "elastic_waistband"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": true,
-          "fall": true,
-          "winter": false
-        },
-        "style_categories": [
-          "sportswear",
-          "casual"
-        ],
-        "dress_code_compatibility": [
-          "weekend",
-          "loungewear"
-        ]
-      },
-      "id": "5",
-      "date_added": "2024-11-16T14:48:29.604490",
-      "image_filename": "clothes462_jpg.rf.3d6d16ccaeb19a80fc628807cb1c6287.jpg",
-      "image_path": "data/images/clothes462_jpg.rf.3d6d16ccaeb19a80fc628807cb1c6287.jpg"
-    },
-    {
-      "type": "shirt",
-      "category": "tops",
-      "description": "A blue and white striped long-sleeve shirt with a V-neck opening and a relaxed collar.",
-      "colors": [
-        {
-          "name": "light blue",
-          "hex": "#ADD8E6",
-          "temperature": "cool",
-          "intensity": "light"
-        },
-        {
-          "name": "white",
-          "hex": "#FFFFFF",
-          "temperature": "neutral",
-          "intensity": "light"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "striped",
-          "scale": "small",
-          "density": "medium",
-          "direction": "vertical",
-          "regularity": "regular"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "smooth",
-          "appearance": "matte",
-          "visual_weight": "light",
-          "material_appearance": "woven"
-        }
-      ],
-      "structure": {
-        "silhouette": "fitted",
-        "length": "hip",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "collar",
-          "chest_pocket"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": true,
-          "fall": true,
-          "winter": false
-        },
-        "style_categories": [
-          "preppy",
-          "classic"
-        ],
-        "dress_code_compatibility": [
-          "smart_casual",
-          "business_casual",
-          "weekend"
-        ]
-      },
-      "id": "6",
-      "date_added": "2024-11-16T14:48:35.059392",
-      "image_filename": "clothes78_jpg.rf.be1ad2d46785dbc1b5e300932d895405.jpg",
-      "image_path": "data/images/clothes78_jpg.rf.be1ad2d46785dbc1b5e300932d895405.jpg"
-    },
-    {
-      "type": "shirt",
-      "category": "tops",
-      "description": "A short-sleeve button-up shirt with a collar, featuring an abstract animal pattern.",
-      "colors": [
-        {
-          "name": "dark gray",
-          "hex": "#4B4B4B",
-          "temperature": "neutral",
-          "intensity": "dark"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "abstract",
-          "scale": "small",
-          "density": "medium",
-          "direction": "irregular",
-          "regularity": "irregular"
+          "direction": "none",
+          "regularity": "none"
         }
       ],
       "textures": [
@@ -437,149 +44,6 @@
       "structure": {
         "silhouette": "loose",
         "length": "hip",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "collar",
-          "buttons"
-        ]
-      },
-      "derived_properties": {
-        "formality": "business casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": true,
-          "fall": true,
-          "winter": false
-        },
-        "style_categories": [
-          "contemporary",
-          "casual"
-        ],
-        "dress_code_compatibility": [
-          "smart_casual",
-          "business_casual",
-          "weekend"
-        ]
-      },
-      "id": "7",
-      "date_added": "2024-11-16T14:48:39.601287",
-      "image_filename": "clothes58_jpg.rf.070a82a98f7619947322dcc14158f8bc.jpg",
-      "image_path": "data/images/clothes58_jpg.rf.070a82a98f7619947322dcc14158f8bc.jpg"
-    },
-    {
-      "type": "vest",
-      "category": "tops",
-      "description": "A sleeveless quilted vest with a front zipper and a subtle geometric pattern. It features a ribbed collar and small logo detail on the left side.",
-      "colors": [
-        {
-          "name": "olive green",
-          "hex": "#808000",
-          "temperature": "neutral",
-          "intensity": "medium"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "geometric",
-          "scale": "medium",
-          "density": "medium",
-          "direction": "irregular",
-          "regularity": "regular"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "quilted",
-          "appearance": "matte",
-          "visual_weight": "medium",
-          "material_appearance": "woven"
-        }
-      ],
-      "structure": {
-        "silhouette": "structured",
-        "length": "hip",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "collar",
-          "zipper",
-          "chest_pocket"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": false,
-          "fall": true,
-          "winter": true
-        },
-        "style_categories": [
-          "outdoor",
-          "utilitarian"
-        ],
-        "dress_code_compatibility": [
-          "casual",
-          "outdoor",
-          "weekend"
-        ]
-      },
-      "id": "8",
-      "date_added": "2024-11-16T14:48:43.963450",
-      "image_filename": "clothes89_jpg.rf.3a89497b3d34c03311b6152184d1db8b.jpg",
-      "image_path": "data/images/clothes89_jpg.rf.3a89497b3d34c03311b6152184d1db8b.jpg"
-    },
-    {
-      "type": "dress",
-      "category": "one-pieces",
-      "description": "A floral patterned dress with short sleeves and a flowy silhouette, featuring a black background with colorful flower prints.",
-      "colors": [
-        {
-          "name": "black",
-          "hex": "#000000",
-          "temperature": "neutral",
-          "intensity": "dark"
-        },
-        {
-          "name": "green",
-          "hex": "#008000",
-          "temperature": "cool",
-          "intensity": "medium"
-        },
-        {
-          "name": "white",
-          "hex": "#FFFFFF",
-          "temperature": "neutral",
-          "intensity": "light"
-        },
-        {
-          "name": "pink",
-          "hex": "#FFC0CB",
-          "temperature": "warm",
-          "intensity": "light"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "floral",
-          "scale": "medium",
-          "density": "medium",
-          "direction": "irregular",
-          "regularity": "irregular"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "smooth",
-          "appearance": "matte",
-          "visual_weight": "light",
-          "material_appearance": "woven"
-        }
-      ],
-      "structure": {
-        "silhouette": "flowing",
-        "length": "knee",
         "cut": "straight",
         "volume": "regular",
         "details": [
@@ -595,23 +59,23 @@
           "winter": false
         },
         "style_categories": [
-          "bohemian",
-          "romantic"
+          "sporty",
+          "casual"
         ],
         "dress_code_compatibility": [
           "casual",
           "weekend"
         ]
       },
-      "id": "9",
-      "date_added": "2024-11-16T14:48:48.912356",
-      "image_filename": "clothes79_jpg.rf.22b76de07bc20536e6b2ba906a09176a.jpg",
-      "image_path": "data/images/clothes79_jpg.rf.22b76de07bc20536e6b2ba906a09176a.jpg"
+      "id": "1",
+      "date_added": "2024-11-16T15:50:41.993379",
+      "image_filename": "00126_00_jpg.rf.4ce6acfdc4ad55335bda0ecc4b8fb564.jpg",
+      "image_path": "data/images/00126_00_jpg.rf.4ce6acfdc4ad55335bda0ecc4b8fb564.jpg"
     },
     {
       "type": "shirt",
       "category": "tops",
-      "description": "A striped long-sleeve shirt with alternating navy blue and white horizontal stripes. Features yellow trim on the neckline and cuffs.",
+      "description": "A striped shirt with three-quarter sleeves and contrast yellow trim on the cuffs and neckline.",
       "colors": [
         {
           "name": "navy blue",
@@ -668,94 +132,88 @@
         },
         "style_categories": [
           "nautical",
-          "classic"
+          "casual"
         ],
         "dress_code_compatibility": [
-          "smart_casual",
+          "casual",
           "weekend"
         ]
       },
-      "id": "10",
-      "date_added": "2024-11-16T14:48:53.668106",
+      "id": "2",
+      "date_added": "2024-11-16T15:50:51.237381",
       "image_filename": "00151_00_jpg.rf.3f0f1d1dc19ba396e07760601fb4f958.jpg",
       "image_path": "data/images/00151_00_jpg.rf.3f0f1d1dc19ba396e07760601fb4f958.jpg"
     },
     {
-      "type": "shirt",
+      "type": "cardigan",
       "category": "tops",
-      "description": "Long-sleeve button-up shirt with a plaid pattern and a structured collar.",
+      "description": "A cropped, knit cardigan with a cable pattern and a single button closure.",
       "colors": [
         {
           "name": "beige",
-          "hex": "#F5F5DC",
+          "hex": "#D2B48C",
           "temperature": "neutral",
-          "intensity": "light"
-        },
-        {
-          "name": "black",
-          "hex": "#000000",
-          "temperature": "neutral",
-          "intensity": "dark"
+          "intensity": "medium"
         }
       ],
       "patterns": [
         {
-          "type": "plaid",
-          "scale": "medium",
-          "density": "medium",
-          "direction": "vertical and horizontal",
-          "regularity": "regular"
+          "type": "solid",
+          "scale": "none",
+          "density": "none",
+          "direction": "none",
+          "regularity": "none"
         }
       ],
       "textures": [
         {
-          "surface": "smooth",
+          "surface": "ribbed",
           "appearance": "matte",
-          "visual_weight": "light",
-          "material_appearance": "woven"
+          "visual_weight": "medium",
+          "material_appearance": "knitted"
         }
       ],
       "structure": {
         "silhouette": "fitted",
-        "length": "hip",
-        "cut": "straight",
-        "volume": "regular",
+        "length": "crop",
+        "cut": "curved",
+        "volume": "slim",
         "details": [
           "collar",
           "buttons"
         ]
       },
       "derived_properties": {
-        "formality": "business casual",
+        "formality": "casual",
         "season_suitability": {
           "spring": true,
-          "summer": true,
+          "summer": false,
           "fall": true,
-          "winter": false
+          "winter": true
         },
         "style_categories": [
-          "classic"
+          "classic",
+          "cozy"
         ],
         "dress_code_compatibility": [
-          "smart_casual",
-          "business_casual",
+          "casual",
           "weekend"
         ]
       },
-      "id": "11",
-      "date_added": "2024-11-16T14:48:58.584541",
-      "image_filename": "clothes473_jpg.rf.a4657f3d4cb6b10c7e66e1c8881fda63.jpg",
-      "image_path": "data/images/clothes473_jpg.rf.a4657f3d4cb6b10c7e66e1c8881fda63.jpg"
+      "id": "3",
+      "date_added": "2024-11-16T15:51:05.955367",
+      "image_filename": "clothes6_jpg.rf.cc194ee0b7452fe633bdb11e4f8bfcf4.jpg",
+      "image_path": "data/images/clothes6_jpg.rf.cc194ee0b7452fe633bdb11e4f8bfcf4.jpg"
     },
     {
       "type": "shirt",
       "category": "tops",
-      "description": "This is a short-sleeve, purple t-shirt with a round neckline.",
+      "description": "A long-sleeve button-up shirt with a collar, made from a lightweight fabric.",
       "colors": [
         {
-          "name": "lavender",
-          "hex": "#E6E6FA",
-          "temperature": "cool",
+          "name": "olive green",
+          "hex": "#808000",
+          "temperature": "neutral",
           "intensity": "medium"
         }
       ],
@@ -777,12 +235,13 @@
         }
       ],
       "structure": {
-        "silhouette": "fitted",
+        "silhouette": "loose",
         "length": "hip",
         "cut": "straight",
-        "volume": "slim",
+        "volume": "regular",
         "details": [
-          "none"
+          "collar",
+          "buttons"
         ]
       },
       "derived_properties": {
@@ -794,47 +253,35 @@
           "winter": false
         },
         "style_categories": [
-          "casual"
+          "casual",
+          "classic"
         ],
         "dress_code_compatibility": [
           "smart_casual",
           "weekend"
         ]
       },
-      "id": "12",
-      "date_added": "2024-11-16T14:49:02.577640",
-      "image_filename": "clothes47_jpg.rf.f5d02cc83bd3874518badf9e35d29309.jpg",
-      "image_path": "data/images/clothes47_jpg.rf.f5d02cc83bd3874518badf9e35d29309.jpg"
+      "id": "4",
+      "date_added": "2024-11-16T15:58:59.262238",
+      "image_filename": "clothes63.jpg",
+      "image_path": "data/images/clothes63.jpg"
     },
     {
       "type": "shirt",
       "category": "tops",
-      "description": "A short-sleeve green shirt with white horizontal stripes and small scattered ice cream cone motifs.",
+      "description": "A navy blue t-shirt with short sleeves, featuring a geometric and text design on the front in white, purple, pink, and blue.",
       "colors": [
         {
-          "name": "mint green",
-          "hex": "#98FF98",
+          "name": "navy blue",
+          "hex": "#000080",
           "temperature": "cool",
-          "intensity": "medium"
-        },
-        {
-          "name": "white",
-          "hex": "#FFFFFF",
-          "temperature": "neutral",
-          "intensity": "light"
+          "intensity": "dark"
         }
       ],
       "patterns": [
         {
-          "type": "striped",
-          "scale": "small",
-          "density": "medium",
-          "direction": "horizontal",
-          "regularity": "regular"
-        },
-        {
-          "type": "abstract (ice cream cones)",
-          "scale": "small",
+          "type": "abstract",
+          "scale": "medium",
           "density": "sparse",
           "direction": "irregular",
           "regularity": "irregular"
@@ -866,149 +313,29 @@
           "winter": false
         },
         "style_categories": [
-          "playful",
-          "casual"
-        ],
-        "dress_code_compatibility": [
-          "weekend",
-          "casual"
-        ]
-      },
-      "id": "13",
-      "date_added": "2024-11-16T14:49:12.507779",
-      "image_filename": "clothes66_jpg.rf.29f2809fdb0b23d7bb5ffa5573d87865.jpg",
-      "image_path": "data/images/clothes66_jpg.rf.29f2809fdb0b23d7bb5ffa5573d87865.jpg"
-    },
-    {
-      "type": "skirt",
-      "category": "bottoms",
-      "description": "A navy blue midi skirt with small white polka dots and thin straps.",
-      "colors": [
-        {
-          "name": "navy blue",
-          "hex": "#000080",
-          "temperature": "cool",
-          "intensity": "dark"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "polka_dot",
-          "scale": "small",
-          "density": "medium",
-          "direction": "none",
-          "regularity": "regular"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "smooth",
-          "appearance": "matte",
-          "visual_weight": "light",
-          "material_appearance": "woven"
-        }
-      ],
-      "structure": {
-        "silhouette": "flowing",
-        "length": "knee",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "none"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": true,
-          "fall": true,
-          "winter": false
-        },
-        "style_categories": [
-          "preppy",
-          "classic"
+          "graphic",
+          "modern"
         ],
         "dress_code_compatibility": [
           "smart_casual",
           "weekend"
         ]
       },
-      "id": "14",
-      "date_added": "2024-11-16T14:49:16.812306",
-      "image_filename": "clothes86_jpg.rf.6bcb8e6d702f6c3b161032d5ff9da8c6.jpg",
-      "image_path": "data/images/clothes86_jpg.rf.6bcb8e6d702f6c3b161032d5ff9da8c6.jpg"
+      "id": "5",
+      "date_added": "2024-11-16T15:59:03.652879",
+      "image_filename": "clothes62.jpg",
+      "image_path": "data/images/clothes62.jpg"
     },
     {
       "type": "shirt",
       "category": "tops",
-      "description": "A gray short-sleeve T-shirt with a graphic print featuring a speech bubble with the text 'WHAT'S UP?' and a small cartoon character.",
+      "description": "A color-block shirt with three sections: a dark blue top section with a pocket, a navy blue middle section, and a light gray bottom section. The shirt has short sleeves.",
       "colors": [
         {
-          "name": "gray",
-          "hex": "#808080",
-          "temperature": "neutral",
-          "intensity": "medium"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "graphic",
-          "scale": "medium",
-          "density": "medium",
-          "direction": "none",
-          "regularity": "regular"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "smooth",
-          "appearance": "matte",
-          "visual_weight": "light",
-          "material_appearance": "woven"
-        }
-      ],
-      "structure": {
-        "silhouette": "fitted",
-        "length": "hip",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "none"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": true,
-          "fall": true,
-          "winter": false
-        },
-        "style_categories": [
-          "graphic",
-          "casual"
-        ],
-        "dress_code_compatibility": [
-          "smart_casual",
-          "weekend"
-        ]
-      },
-      "id": "15",
-      "date_added": "2024-11-16T14:49:24.184304",
-      "image_filename": "clothes70_jpg.rf.d51e7cde31b056e6adc07ed91930b787.jpg",
-      "image_path": "data/images/clothes70_jpg.rf.d51e7cde31b056e6adc07ed91930b787.jpg"
-    },
-    {
-      "type": "hat",
-      "category": "accessories",
-      "description": "A knitted beanie with a white top and a wide band, featuring Russian text and design elements in blue, white, and red.",
-      "colors": [
-        {
-          "name": "white",
-          "hex": "#FFFFFF",
-          "temperature": "neutral",
-          "intensity": "light"
+          "name": "dark blue",
+          "hex": "#2C3E50",
+          "temperature": "cool",
+          "intensity": "dark"
         },
         {
           "name": "navy blue",
@@ -1017,167 +344,36 @@
           "intensity": "dark"
         },
         {
-          "name": "red",
-          "hex": "#FF0000",
-          "temperature": "warm",
-          "intensity": "medium"
+          "name": "light gray",
+          "hex": "#D3D3D3",
+          "temperature": "neutral",
+          "intensity": "light"
         }
       ],
       "patterns": [
         {
-          "type": "abstract",
-          "scale": "medium",
-          "density": "medium",
+          "type": "color_block",
+          "scale": "large",
+          "density": "sparse",
           "direction": "horizontal",
           "regularity": "regular"
         }
       ],
       "textures": [
         {
-          "surface": "knitted",
-          "appearance": "matte",
-          "visual_weight": "medium",
-          "material_appearance": "knitted"
-        }
-      ],
-      "structure": {
-        "silhouette": "fitted",
-        "length": "above ear",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "none"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": false,
-          "fall": true,
-          "winter": true
-        },
-        "style_categories": [
-          "sporty",
-          "casual"
-        ],
-        "dress_code_compatibility": [
-          "weekend",
-          "sports"
-        ]
-      },
-      "id": "16",
-      "date_added": "2024-11-16T14:49:34.015695",
-      "image_filename": "clothes87_jpg.rf.70325436d39717a2d1eb1791dc477764.jpg",
-      "image_path": "data/images/clothes87_jpg.rf.70325436d39717a2d1eb1791dc477764.jpg"
-    },
-    {
-      "type": "dress",
-      "category": "one-pieces",
-      "description": "A long, tiered dress with a button-up top and three-quarter sleeves.",
-      "colors": [
-        {
-          "name": "navy blue",
-          "hex": "#000080",
-          "temperature": "cool",
-          "intensity": "dark"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "solid",
-          "scale": "none",
-          "density": "none",
-          "direction": "none",
-          "regularity": "none"
-        }
-      ],
-      "textures": [
-        {
           "surface": "smooth",
           "appearance": "matte",
-          "visual_weight": "medium",
+          "visual_weight": "light",
           "material_appearance": "woven"
         }
       ],
       "structure": {
         "silhouette": "loose",
-        "length": "ankle",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "buttons"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": true,
-          "fall": true,
-          "winter": false
-        },
-        "style_categories": [
-          "classic"
-        ],
-        "dress_code_compatibility": [
-          "smart_casual",
-          "weekend"
-        ]
-      },
-      "id": "17",
-      "date_added": "2024-11-16T14:49:39.762941",
-      "image_filename": "clothes467_jpg.rf.9b1dd9748faf915189ecf20787576f93.jpg",
-      "image_path": "data/images/clothes467_jpg.rf.9b1dd9748faf915189ecf20787576f93.jpg"
-    },
-    {
-      "type": "shirt",
-      "category": "tops",
-      "description": "A short-sleeved, color-blocked t-shirt with the 'FILA' logo across the chest. The top section is red, the middle is white, and the bottom is navy blue.",
-      "colors": [
-        {
-          "name": "red",
-          "hex": "#FF0000",
-          "temperature": "warm",
-          "intensity": "medium"
-        },
-        {
-          "name": "white",
-          "hex": "#FFFFFF",
-          "temperature": "neutral",
-          "intensity": "light"
-        },
-        {
-          "name": "navy blue",
-          "hex": "#000080",
-          "temperature": "cool",
-          "intensity": "dark"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "solid",
-          "scale": "none",
-          "density": "none",
-          "direction": "none",
-          "regularity": "none"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "smooth",
-          "appearance": "matte",
-          "visual_weight": "light",
-          "material_appearance": "knitted"
-        }
-      ],
-      "structure": {
-        "silhouette": "fitted",
         "length": "hip",
         "cut": "straight",
         "volume": "regular",
         "details": [
-          "none"
+          "chest_pocket"
         ]
       },
       "derived_properties": {
@@ -1189,38 +385,38 @@
           "winter": false
         },
         "style_categories": [
-          "sporty",
-          "casual"
+          "casual",
+          "modern"
         ],
         "dress_code_compatibility": [
           "smart_casual",
           "weekend"
         ]
       },
-      "id": "18",
-      "date_added": "2024-11-16T14:49:46.508404",
-      "image_filename": "00126_00_jpg.rf.4ce6acfdc4ad55335bda0ecc4b8fb564.jpg",
-      "image_path": "data/images/00126_00_jpg.rf.4ce6acfdc4ad55335bda0ecc4b8fb564.jpg"
+      "id": "6",
+      "date_added": "2024-11-16T15:59:09.383602",
+      "image_filename": "clothes76.jpg",
+      "image_path": "data/images/clothes76.jpg"
     },
     {
-      "type": "jacket",
+      "type": "vest",
       "category": "tops",
-      "description": "A short-sleeved, quilted puffer jacket in a light pink color with a V-neckline.",
+      "description": "A sleeveless quilted vest with a zipper down the front. It features a combination of materials with a knitted collar and quilted body. The vest has a small chest pocket on one side.",
       "colors": [
         {
-          "name": "light pink",
-          "hex": "#FADADD",
-          "temperature": "warm",
-          "intensity": "light"
+          "name": "olive green",
+          "hex": "#808000",
+          "temperature": "cool",
+          "intensity": "medium"
         }
       ],
       "patterns": [
         {
-          "type": "solid",
-          "scale": "none",
-          "density": "none",
-          "direction": "none",
-          "regularity": "none"
+          "type": "quilted",
+          "scale": "medium",
+          "density": "medium",
+          "direction": "irregular",
+          "regularity": "regular"
         }
       ],
       "textures": [
@@ -1228,16 +424,17 @@
           "surface": "quilted",
           "appearance": "matte",
           "visual_weight": "medium",
-          "material_appearance": "none"
+          "material_appearance": "woven"
         }
       ],
       "structure": {
-        "silhouette": "loose",
+        "silhouette": "structured",
         "length": "hip",
         "cut": "straight",
         "volume": "regular",
         "details": [
-          "V-neck"
+          "zipper",
+          "chest_pocket"
         ]
       },
       "derived_properties": {
@@ -1249,147 +446,27 @@
           "winter": true
         },
         "style_categories": [
-          "casual"
-        ],
-        "dress_code_compatibility": [
-          "weekend"
-        ]
-      },
-      "id": "19",
-      "date_added": "2024-11-16T14:49:53.061544",
-      "image_filename": "clothes81_jpg.rf.a54a623f922c5cd7aec418e4d3b9a40f.jpg",
-      "image_path": "data/images/clothes81_jpg.rf.a54a623f922c5cd7aec418e4d3b9a40f.jpg"
-    },
-    {
-      "type": "shirt",
-      "category": "tops",
-      "description": "A short-sleeved, navy blue polo shirt with a collar and a three-button placket.",
-      "colors": [
-        {
-          "name": "navy blue",
-          "hex": "#000080",
-          "temperature": "cool",
-          "intensity": "dark"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "solid",
-          "scale": "none",
-          "density": "none",
-          "direction": "none",
-          "regularity": "none"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "smooth",
-          "appearance": "matte",
-          "visual_weight": "light",
-          "material_appearance": "woven"
-        }
-      ],
-      "structure": {
-        "silhouette": "fitted",
-        "length": "hip",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "collar",
-          "buttons"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": true,
-          "fall": true,
-          "winter": false
-        },
-        "style_categories": [
-          "preppy",
-          "classic"
-        ],
-        "dress_code_compatibility": [
-          "smart_casual",
-          "weekend"
-        ]
-      },
-      "id": "20",
-      "date_added": "2024-11-16T14:49:58.671970",
-      "image_filename": "clothes468_jpg.rf.7db2263f643f533dee111d14c7c19db0.jpg",
-      "image_path": "data/images/clothes468_jpg.rf.7db2263f643f533dee111d14c7c19db0.jpg"
-    },
-    {
-      "type": "shirt",
-      "category": "tops",
-      "description": "A long-sleeve button-up shirt with a collar, made from a fabric that appears slightly textured.",
-      "colors": [
-        {
-          "name": "army green",
-          "hex": "#4B5320",
-          "temperature": "cool",
-          "intensity": "medium"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "solid",
-          "scale": "none",
-          "density": "none",
-          "direction": "none",
-          "regularity": "none"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "slightly rough",
-          "appearance": "matte",
-          "visual_weight": "medium",
-          "material_appearance": "woven"
-        }
-      ],
-      "structure": {
-        "silhouette": "loose",
-        "length": "hip",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "collar",
-          "buttons"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": false,
-          "fall": true,
-          "winter": false
-        },
-        "style_categories": [
-          "casual",
-          "outdoors"
+          "outdoor",
+          "practical"
         ],
         "dress_code_compatibility": [
           "casual",
-          "weekend"
+          "outdoor activities"
         ]
       },
-      "id": "21",
-      "date_added": "2024-11-16T14:50:03.096240",
-      "image_filename": "clothes63_jpg.rf.2948c23e9025272f31842f30ba5385ca.jpg",
-      "image_path": "data/images/clothes63_jpg.rf.2948c23e9025272f31842f30ba5385ca.jpg"
+      "id": "7",
+      "date_added": "2024-11-16T15:59:14.303075",
+      "image_filename": "clothes89.jpg",
+      "image_path": "data/images/clothes89.jpg"
     },
     {
       "type": "pants",
       "category": "bottoms",
-      "description": "A pair of dark grey distressed jeans with rips at the knees and a fitted design.",
+      "description": "Distressed skinny jeans with ripped knees and a faded wash.",
       "colors": [
         {
-          "name": "dark grey",
-          "hex": "#3d3d3d",
+          "name": "charcoal",
+          "hex": "#36454F",
           "temperature": "neutral",
           "intensity": "dark"
         }
@@ -1405,7 +482,7 @@
       ],
       "textures": [
         {
-          "surface": "smooth with distressed areas",
+          "surface": "smooth",
           "appearance": "matte",
           "visual_weight": "medium",
           "material_appearance": "denim"
@@ -1417,7 +494,70 @@
         "cut": "straight",
         "volume": "slim",
         "details": [
-          "rips at knees"
+          "rips",
+          "faded_wash"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": true
+        },
+        "style_categories": [
+          "edgy",
+          "urban"
+        ],
+        "dress_code_compatibility": [
+          "casual",
+          "smart_casual"
+        ]
+      },
+      "id": "8",
+      "date_added": "2024-11-16T15:59:18.866415",
+      "image_filename": "clothes74.jpg",
+      "image_path": "data/images/clothes74.jpg"
+    },
+    {
+      "type": "shirt",
+      "category": "tops",
+      "description": "A long-sleeve plaid shirt with a classic collar and button-down front, featuring a multicolored checkered pattern with shades of pink, blue, yellow, and white. It also has two chest pockets.",
+      "colors": [
+        {
+          "name": "multicolor",
+          "hex": null,
+          "temperature": "neutral",
+          "intensity": "medium"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "plaid",
+          "scale": "medium",
+          "density": "medium",
+          "direction": "regular",
+          "regularity": "regular"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "woven"
+        }
+      ],
+      "structure": {
+        "silhouette": "fitted",
+        "length": "hip",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "collar",
+          "chest_pocket",
+          "buttons"
         ]
       },
       "derived_properties": {
@@ -1429,29 +569,36 @@
           "winter": false
         },
         "style_categories": [
-          "urban",
-          "casual"
+          "preppy",
+          "classic"
         ],
         "dress_code_compatibility": [
-          "casual",
+          "smart_casual",
+          "business_casual",
           "weekend"
         ]
       },
-      "id": "22",
-      "date_added": "2024-11-16T14:50:07.396517",
-      "image_filename": "clothes74_jpg.rf.ff851e1debaf721469fd9e3f2562cbf6.jpg",
-      "image_path": "data/images/clothes74_jpg.rf.ff851e1debaf721469fd9e3f2562cbf6.jpg"
+      "id": "9",
+      "date_added": "2024-11-16T15:59:24.235761",
+      "image_filename": "clothes65.jpg",
+      "image_path": "data/images/clothes65.jpg"
     },
     {
       "type": "shirt",
       "category": "tops",
-      "description": "Sleeveless top with a patterned design.",
+      "description": "Sleeveless shirt with a multicolored zigzag pattern.",
       "colors": [
         {
-          "name": "black and white",
-          "hex": "#000000 and #FFFFFF",
+          "name": "gray",
+          "hex": "#808080",
           "temperature": "neutral",
           "intensity": "medium"
+        },
+        {
+          "name": "white",
+          "hex": "#FFFFFF",
+          "temperature": "neutral",
+          "intensity": "light"
         }
       ],
       "patterns": [
@@ -1486,10 +633,71 @@
           "spring": true,
           "summer": true,
           "fall": true,
-          "winter": false
+          "winter": true
         },
         "style_categories": [
           "bohemian",
+          "casual"
+        ],
+        "dress_code_compatibility": [
+          "casual",
+          "beach",
+          "weekend"
+        ]
+      },
+      "id": "10",
+      "date_added": "2024-11-16T15:59:29.147375",
+      "image_filename": "clothes59.jpg",
+      "image_path": "data/images/clothes59.jpg"
+    },
+    {
+      "type": "shirt",
+      "category": "tops",
+      "description": "A short-sleeved shirt with a collar and a button-up front, featuring an all-over print pattern.",
+      "colors": [
+        {
+          "name": "dark gray",
+          "hex": "#505050",
+          "temperature": "neutral",
+          "intensity": "dark"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "animal",
+          "scale": "small",
+          "density": "medium",
+          "direction": "irregular",
+          "regularity": "irregular"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "woven"
+        }
+      ],
+      "structure": {
+        "silhouette": "loose",
+        "length": "hip",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "collar",
+          "buttons"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": false
+        },
+        "style_categories": [
           "casual"
         ],
         "dress_code_compatibility": [
@@ -1497,15 +705,462 @@
           "weekend"
         ]
       },
-      "id": "23",
-      "date_added": "2024-11-16T14:50:11.502523",
-      "image_filename": "clothes59_jpg.rf.cf5c111871025dfd3d48a1f76a6c1bbf.jpg",
-      "image_path": "data/images/clothes59_jpg.rf.cf5c111871025dfd3d48a1f76a6c1bbf.jpg"
+      "id": "11",
+      "date_added": "2024-11-16T15:59:33.346730",
+      "image_filename": "clothes58.jpg",
+      "image_path": "data/images/clothes58.jpg"
+    },
+    {
+      "type": "shirt",
+      "category": "tops",
+      "description": "A casual gray t-shirt with a graphic print featuring the text 'WHAT'S UP?' in a speech bubble and an illustration on the shoulder.",
+      "colors": [
+        {
+          "name": "gray",
+          "hex": "#808080",
+          "temperature": "neutral",
+          "intensity": "medium"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "graphic",
+          "scale": "medium",
+          "density": "medium",
+          "direction": "none",
+          "regularity": "irregular"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "knitted"
+        }
+      ],
+      "structure": {
+        "silhouette": "fitted",
+        "length": "hip",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "crew_neck"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": false
+        },
+        "style_categories": [
+          "youthful",
+          "casual"
+        ],
+        "dress_code_compatibility": [
+          "smart_casual",
+          "weekend"
+        ]
+      },
+      "id": "12",
+      "date_added": "2024-11-16T15:59:38.264007",
+      "image_filename": "clothes70.jpg",
+      "image_path": "data/images/clothes70.jpg"
+    },
+    {
+      "type": "shirt",
+      "category": "tops",
+      "description": "A casual short-sleeve shirt with a green base color featuring white horizontal stripes and a small, scattered print design.",
+      "colors": [
+        {
+          "name": "green",
+          "hex": "#32CD32",
+          "temperature": "cool",
+          "intensity": "medium"
+        },
+        {
+          "name": "white",
+          "hex": "#FFFFFF",
+          "temperature": "neutral",
+          "intensity": "light"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "striped",
+          "scale": "small",
+          "density": "medium",
+          "direction": "horizontal",
+          "regularity": "regular"
+        },
+        {
+          "type": "abstract",
+          "scale": "small",
+          "density": "sparse",
+          "direction": "irregular",
+          "regularity": "irregular"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "knitted"
+        }
+      ],
+      "structure": {
+        "silhouette": "loose",
+        "length": "hip",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "none"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": false
+        },
+        "style_categories": [
+          "casual",
+          "fun"
+        ],
+        "dress_code_compatibility": [
+          "smart_casual",
+          "weekend"
+        ]
+      },
+      "id": "13",
+      "date_added": "2024-11-16T15:59:42.337523",
+      "image_filename": "clothes66.jpg",
+      "image_path": "data/images/clothes66.jpg"
+    },
+    {
+      "type": "pants",
+      "category": "bottoms",
+      "description": "A pair of grey denim jeans with a button and zip closure, five-pocket design, and subtle fading.",
+      "colors": [
+        {
+          "name": "grey",
+          "hex": "#808080",
+          "temperature": "neutral",
+          "intensity": "medium"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "solid",
+          "scale": "none",
+          "density": "none",
+          "direction": "none",
+          "regularity": "none"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "medium",
+          "material_appearance": "denim"
+        }
+      ],
+      "structure": {
+        "silhouette": "fitted",
+        "length": "ankle",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "none",
+          "button, zip, pockets"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": true
+        },
+        "style_categories": [
+          "casual",
+          "classic"
+        ],
+        "dress_code_compatibility": [
+          "casual",
+          "weekend"
+        ]
+      },
+      "id": "14",
+      "date_added": "2024-11-16T15:59:45.844261",
+      "image_filename": "clothes73.jpg",
+      "image_path": "data/images/clothes73.jpg"
+    },
+    {
+      "type": "pants",
+      "category": "bottoms",
+      "description": "Navy blue pajama pants featuring a pattern of white and black soccer balls and the word 'FOOTBALL'.",
+      "colors": [
+        {
+          "name": "navy blue",
+          "hex": "#000080",
+          "temperature": "cool",
+          "intensity": "dark"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "abstract",
+          "scale": "medium",
+          "density": "medium",
+          "direction": "irregular",
+          "regularity": "regular"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "woven"
+        }
+      ],
+      "structure": {
+        "silhouette": "loose",
+        "length": "ankle",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "elastic waistband"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": true
+        },
+        "style_categories": [
+          "sporty",
+          "casual"
+        ],
+        "dress_code_compatibility": [
+          "weekend",
+          "loungewear"
+        ]
+      },
+      "id": "15",
+      "date_added": "2024-11-16T15:59:50.381791",
+      "image_filename": "clothes462.jpg",
+      "image_path": "data/images/clothes462.jpg"
+    },
+    {
+      "type": "dress",
+      "category": "one-pieces",
+      "description": "A black and white striped short-sleeve dress with a crew neckline. The pattern consists of horizontal stripes covering the entire dress.",
+      "colors": [
+        {
+          "name": "black",
+          "hex": "#000000",
+          "temperature": "neutral",
+          "intensity": "dark"
+        },
+        {
+          "name": "white",
+          "hex": "#FFFFFF",
+          "temperature": "neutral",
+          "intensity": "light"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "striped",
+          "scale": "medium",
+          "density": "medium",
+          "direction": "horizontal",
+          "regularity": "regular"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "none"
+        }
+      ],
+      "structure": {
+        "silhouette": "fitted",
+        "length": "hip",
+        "cut": "straight",
+        "volume": "slim",
+        "details": [
+          "none"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": false
+        },
+        "style_categories": [
+          "classic",
+          "minimalist"
+        ],
+        "dress_code_compatibility": [
+          "smart_casual",
+          "weekend"
+        ]
+      },
+      "id": "16",
+      "date_added": "2024-11-16T15:59:55.264212",
+      "image_filename": "clothes463.jpg",
+      "image_path": "data/images/clothes463.jpg"
+    },
+    {
+      "type": "shirt",
+      "category": "tops",
+      "description": "A long-sleeved button-up shirt with a classic collar and plaid pattern.",
+      "colors": [
+        {
+          "name": "beige",
+          "hex": "#F5F5DC",
+          "temperature": "neutral",
+          "intensity": "light"
+        },
+        {
+          "name": "black",
+          "hex": "#000000",
+          "temperature": "neutral",
+          "intensity": "dark"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "plaid",
+          "scale": "medium",
+          "density": "medium",
+          "direction": "vertical and horizontal",
+          "regularity": "regular"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "woven"
+        }
+      ],
+      "structure": {
+        "silhouette": "fitted",
+        "length": "hip",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "collar",
+          "buttons"
+        ]
+      },
+      "derived_properties": {
+        "formality": "business casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": false
+        },
+        "style_categories": [
+          "classic",
+          "preppy"
+        ],
+        "dress_code_compatibility": [
+          "smart_casual",
+          "business_casual",
+          "weekend"
+        ]
+      },
+      "id": "17",
+      "date_added": "2024-11-16T15:59:58.950075",
+      "image_filename": "clothes473.jpg",
+      "image_path": "data/images/clothes473.jpg"
+    },
+    {
+      "type": "dress",
+      "category": "one-pieces",
+      "description": "A navy blue dress with a buttoned, high neckline and long sleeves. The dress has a tiered, flowing design.",
+      "colors": [
+        {
+          "name": "navy blue",
+          "hex": "#000080",
+          "temperature": "cool",
+          "intensity": "dark"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "solid",
+          "scale": "none",
+          "density": "none",
+          "direction": "none",
+          "regularity": "none"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "woven"
+        }
+      ],
+      "structure": {
+        "silhouette": "flowing",
+        "length": "ankle",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "buttons"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": false
+        },
+        "style_categories": [
+          "classic"
+        ],
+        "dress_code_compatibility": [
+          "smart_casual",
+          "weekend"
+        ]
+      },
+      "id": "18",
+      "date_added": "2024-11-16T16:00:05.604657",
+      "image_filename": "clothes467.jpg",
+      "image_path": "data/images/clothes467.jpg"
     },
     {
       "type": "shorts",
       "category": "bottoms",
-      "description": "Casual beige shorts with an elastic waistband, suitable for relaxed settings.",
+      "description": "A pair of casual beige shorts with an elastic waistband, designed for comfort.",
       "colors": [
         {
           "name": "beige",
@@ -1550,331 +1205,21 @@
         },
         "style_categories": [
           "casual",
-          "sporty"
+          "minimalistic"
         ],
         "dress_code_compatibility": [
           "weekend"
         ]
       },
-      "id": "24",
-      "date_added": "2024-11-16T14:50:16.918511",
-      "image_filename": "clothes466_jpg.rf.4fa68bc599d1bc847dae081327018d08.jpg",
-      "image_path": "data/images/clothes466_jpg.rf.4fa68bc599d1bc847dae081327018d08.jpg"
-    },
-    {
-      "type": "shirt",
-      "category": "tops",
-      "description": "A dark-colored short-sleeve athletic shirt with branding and graphics on the front.",
-      "colors": [
-        {
-          "name": "dark gray",
-          "hex": "#A9A9A9",
-          "temperature": "neutral",
-          "intensity": "dark"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "abstract",
-          "scale": "medium",
-          "density": "medium",
-          "direction": "none",
-          "regularity": "irregular"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "smooth",
-          "appearance": "matte",
-          "visual_weight": "light",
-          "material_appearance": "woven"
-        }
-      ],
-      "structure": {
-        "silhouette": "fitted",
-        "length": "hip",
-        "cut": "straight",
-        "volume": "slim",
-        "details": [
-          "none"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": true,
-          "fall": true,
-          "winter": false
-        },
-        "style_categories": [
-          "athletic",
-          "casual"
-        ],
-        "dress_code_compatibility": [
-          "smart_casual",
-          "weekend"
-        ]
-      },
-      "id": "25",
-      "date_added": "2024-11-16T14:50:22.210048",
-      "image_filename": "clothes470_jpg.rf.72427319bc5a729a5ab8960d953e75df.jpg",
-      "image_path": "data/images/clothes470_jpg.rf.72427319bc5a729a5ab8960d953e75df.jpg"
-    },
-    {
-      "type": "shirt",
-      "category": "tops",
-      "description": "This is a short-sleeve color-block shirt featuring three horizontal panels in different shades.",
-      "colors": [
-        {
-          "name": "dark blue",
-          "hex": "#00008B",
-          "temperature": "cool",
-          "intensity": "dark"
-        },
-        {
-          "name": "navy blue",
-          "hex": "#000080",
-          "temperature": "cool",
-          "intensity": "dark"
-        },
-        {
-          "name": "light gray",
-          "hex": "#D3D3D3",
-          "temperature": "neutral",
-          "intensity": "light"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "color_block",
-          "scale": "large",
-          "density": "medium",
-          "direction": "horizontal",
-          "regularity": "regular"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "smooth",
-          "appearance": "matte",
-          "visual_weight": "medium",
-          "material_appearance": "woven"
-        }
-      ],
-      "structure": {
-        "silhouette": "loose",
-        "length": "hip",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "chest_pocket"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": true,
-          "fall": true,
-          "winter": false
-        },
-        "style_categories": [
-          "casual",
-          "modern"
-        ],
-        "dress_code_compatibility": [
-          "weekend",
-          "smart_casual"
-        ]
-      },
-      "id": "26",
-      "date_added": "2024-11-16T14:50:30.173303",
-      "image_filename": "clothes76_jpg.rf.dec929ae65a6c9ec90f3107640fde752.jpg",
-      "image_path": "data/images/clothes76_jpg.rf.dec929ae65a6c9ec90f3107640fde752.jpg"
-    },
-    {
-      "type": "dress",
-      "category": "one-pieces",
-      "description": "A black and white striped short-sleeve dress, knee-length with a fitted silhouette.",
-      "colors": [
-        {
-          "name": "black and white",
-          "hex": "#000000 and #FFFFFF",
-          "temperature": "neutral",
-          "intensity": "dark and light"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "striped",
-          "scale": "medium",
-          "density": "medium",
-          "direction": "horizontal",
-          "regularity": "regular"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "smooth",
-          "appearance": "matte",
-          "visual_weight": "light",
-          "material_appearance": "none"
-        }
-      ],
-      "structure": {
-        "silhouette": "fitted",
-        "length": "knee",
-        "cut": "straight",
-        "volume": "slim",
-        "details": [
-          "none"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": true,
-          "fall": true,
-          "winter": false
-        },
-        "style_categories": [
-          "classic"
-        ],
-        "dress_code_compatibility": [
-          "smart_casual",
-          "weekend"
-        ]
-      },
-      "id": "27",
-      "date_added": "2024-11-16T14:50:35.661502",
-      "image_filename": "clothes463_jpg.rf.ba7b4b7b90f9cc725c40e7da46b126a6.jpg",
-      "image_path": "data/images/clothes463_jpg.rf.ba7b4b7b90f9cc725c40e7da46b126a6.jpg"
-    },
-    {
-      "type": "shirt",
-      "category": "tops",
-      "description": "A navy blue t-shirt with a logo and geometric shapes printed in white, pink, and teal.",
-      "colors": [
-        {
-          "name": "navy blue",
-          "hex": "#000080",
-          "temperature": "cool",
-          "intensity": "dark"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "abstract",
-          "scale": "medium",
-          "density": "medium",
-          "direction": "irregular",
-          "regularity": "irregular"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "smooth",
-          "appearance": "matte",
-          "visual_weight": "light",
-          "material_appearance": "woven"
-        }
-      ],
-      "structure": {
-        "silhouette": "loose",
-        "length": "hip",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "none"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": true,
-          "fall": true,
-          "winter": false
-        },
-        "style_categories": [
-          "graphic",
-          "casual"
-        ],
-        "dress_code_compatibility": [
-          "smart_casual",
-          "weekend"
-        ]
-      },
-      "id": "28",
-      "date_added": "2024-11-16T14:50:41.293701",
-      "image_filename": "clothes62_jpg.rf.12327ae11bd1e46a195c414b5c19db75.jpg",
-      "image_path": "data/images/clothes62_jpg.rf.12327ae11bd1e46a195c414b5c19db75.jpg"
-    },
-    {
-      "type": "shoes",
-      "category": "none",
-      "description": "White sandals with a flat sole. They feature multiple straps, including an ankle strap with a buckle for fastening. There is a subtle decorative buckle on top.",
-      "colors": [
-        {
-          "name": "white",
-          "hex": "#FFFFFF",
-          "temperature": "neutral",
-          "intensity": "light"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "solid",
-          "scale": "none",
-          "density": "none",
-          "direction": "none",
-          "regularity": "none"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "smooth",
-          "appearance": "matte",
-          "visual_weight": "light",
-          "material_appearance": "leather"
-        }
-      ],
-      "structure": {
-        "silhouette": "fitted",
-        "length": "none",
-        "cut": "straight",
-        "volume": "slim",
-        "details": [
-          "buckle"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": true,
-          "fall": false,
-          "winter": false
-        },
-        "style_categories": [
-          "minimalist"
-        ],
-        "dress_code_compatibility": [
-          "casual",
-          "weekend"
-        ]
-      },
-      "id": "29",
-      "date_added": "2024-11-16T14:50:47.437026",
-      "image_filename": "clothes82_jpg.rf.5c16357608bde75d4ff54d3f7c28e7ae.jpg",
-      "image_path": "data/images/clothes82_jpg.rf.5c16357608bde75d4ff54d3f7c28e7ae.jpg"
+      "id": "19",
+      "date_added": "2024-11-16T16:00:10.722558",
+      "image_filename": "clothes466.jpg",
+      "image_path": "data/images/clothes466.jpg"
     },
     {
       "type": "pants",
       "category": "bottoms",
-      "description": "Khaki pants with a classic design, featuring rolled-up cuffs.",
+      "description": "Casual khaki pants with a classic straight-leg cut, featuring a button and zipper closure, side pockets and cuffed hems.",
       "colors": [
         {
           "name": "khaki",
@@ -1906,8 +1251,9 @@
         "cut": "straight",
         "volume": "regular",
         "details": [
-          "none",
-          "pockets, button"
+          "buttons",
+          "cuffed_hem",
+          "side_pockets"
         ]
       },
       "derived_properties": {
@@ -1917,345 +1263,29 @@
           "summer": true,
           "fall": true,
           "winter": false
-        },
-        "style_categories": [
-          "classic"
-        ],
-        "dress_code_compatibility": [
-          "smart_casual",
-          "weekend"
-        ]
-      },
-      "id": "30",
-      "date_added": "2024-11-16T14:50:53.375821",
-      "image_filename": "clothes472_jpg.rf.a40f6e04c7725cfe6d42cb763e04aa30.jpg",
-      "image_path": "data/images/clothes472_jpg.rf.a40f6e04c7725cfe6d42cb763e04aa30.jpg"
-    },
-    {
-      "type": "pants",
-      "category": "bottoms",
-      "description": "A pair of dark navy blue pants with an elastic waistband and a simple, straight cut.",
-      "colors": [
-        {
-          "name": "navy blue",
-          "hex": "#000080",
-          "temperature": "cool",
-          "intensity": "dark"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "solid",
-          "scale": "none",
-          "density": "none",
-          "direction": "none",
-          "regularity": "none"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "smooth",
-          "appearance": "matte",
-          "visual_weight": "medium",
-          "material_appearance": "none"
-        }
-      ],
-      "structure": {
-        "silhouette": "loose",
-        "length": "ankle",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "none"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": true,
-          "fall": true,
-          "winter": false
-        },
-        "style_categories": [
-          "relaxed",
-          "classic"
-        ],
-        "dress_code_compatibility": [
-          "smart_casual",
-          "weekend"
-        ]
-      },
-      "id": "31",
-      "date_added": "2024-11-16T14:50:58.800761",
-      "image_filename": "clothes469_jpg.rf.ff0c995033e0931edbaafe2e427bdf29.jpg",
-      "image_path": "data/images/clothes469_jpg.rf.ff0c995033e0931edbaafe2e427bdf29.jpg"
-    },
-    {
-      "type": "shirt",
-      "category": "tops",
-      "description": "A long-sleeved checkered shirt with a button-up front and a collar.",
-      "colors": [
-        {
-          "name": "pink",
-          "hex": "#FFC0CB",
-          "temperature": "warm",
-          "intensity": "medium"
-        },
-        {
-          "name": "blue",
-          "hex": "#0000FF",
-          "temperature": "cool",
-          "intensity": "medium"
-        },
-        {
-          "name": "yellow",
-          "hex": "#FFFF00",
-          "temperature": "warm",
-          "intensity": "medium"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "plaid",
-          "scale": "medium",
-          "density": "dense",
-          "direction": "vertical and horizontal",
-          "regularity": "regular"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "smooth",
-          "appearance": "matte",
-          "visual_weight": "light",
-          "material_appearance": "woven"
-        }
-      ],
-      "structure": {
-        "silhouette": "regular",
-        "length": "hip",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "collar",
-          "chest_pocket",
-          "buttons"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": true,
-          "fall": true,
-          "winter": false
-        },
-        "style_categories": [
-          "preppy",
-          "casual"
-        ],
-        "dress_code_compatibility": [
-          "smart_casual",
-          "weekend"
-        ]
-      },
-      "id": "32",
-      "date_added": "2024-11-16T14:51:05.048948",
-      "image_filename": "clothes65_jpg.rf.5eb35e961f7768bccf96d6ae9fff3c0a.jpg",
-      "image_path": "data/images/clothes65_jpg.rf.5eb35e961f7768bccf96d6ae9fff3c0a.jpg"
-    },
-    {
-      "type": "shirt",
-      "category": "tops",
-      "description": "A short-sleeved shirt with a zipper neckline and contrasting trim on the collar and sleeves.",
-      "colors": [
-        {
-          "name": "teal",
-          "hex": "#008080",
-          "temperature": "cool",
-          "intensity": "medium"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "solid",
-          "scale": "none",
-          "density": "none",
-          "direction": "none",
-          "regularity": "none"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "smooth",
-          "appearance": "matte",
-          "visual_weight": "light",
-          "material_appearance": "woven"
-        }
-      ],
-      "structure": {
-        "silhouette": "fitted",
-        "length": "hip",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "collar",
-          "zipper"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": true,
-          "fall": true,
-          "winter": false
-        },
-        "style_categories": [
-          "sporty",
-          "casual"
-        ],
-        "dress_code_compatibility": [
-          "smart_casual",
-          "weekend"
-        ]
-      },
-      "id": "33",
-      "date_added": "2024-11-16T14:51:10.781196",
-      "image_filename": "clothes92_jpg.rf.6876d896a2aebc66c6584bd5932aa065.jpg",
-      "image_path": "data/images/clothes92_jpg.rf.6876d896a2aebc66c6584bd5932aa065.jpg"
-    },
-    {
-      "type": "cardigan",
-      "category": "tops",
-      "description": "A long, open-front ribbed cardigan with full sleeves and a relaxed fit.",
-      "colors": [
-        {
-          "name": "gray",
-          "hex": "#808080",
-          "temperature": "neutral",
-          "intensity": "medium"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "solid",
-          "scale": "none",
-          "density": "none",
-          "direction": "none",
-          "regularity": "none"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "ribbed",
-          "appearance": "matte",
-          "visual_weight": "medium",
-          "material_appearance": "knitted"
-        }
-      ],
-      "structure": {
-        "silhouette": "loose",
-        "length": "knee",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "none"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": false,
-          "fall": true,
-          "winter": true
         },
         "style_categories": [
           "classic",
           "casual"
         ],
         "dress_code_compatibility": [
-          "casual",
-          "weekend"
-        ]
-      },
-      "id": "34",
-      "date_added": "2024-11-16T14:51:15.903647",
-      "image_filename": "clothes97_jpg.rf.e59a9eb29515f39bba3b1e73faf10589.jpg",
-      "image_path": "data/images/clothes97_jpg.rf.e59a9eb29515f39bba3b1e73faf10589.jpg"
-    },
-    {
-      "type": "pants",
-      "category": "bottoms",
-      "description": "A pair of gray denim jeans with a button and zipper closure, featuring front and back pockets.",
-      "colors": [
-        {
-          "name": "gray",
-          "hex": "#808080",
-          "temperature": "neutral",
-          "intensity": "medium"
-        }
-      ],
-      "patterns": [
-        {
-          "type": "solid",
-          "scale": "none",
-          "density": "none",
-          "direction": "none",
-          "regularity": "none"
-        }
-      ],
-      "textures": [
-        {
-          "surface": "smooth",
-          "appearance": "matte",
-          "visual_weight": "medium",
-          "material_appearance": "denim"
-        }
-      ],
-      "structure": {
-        "silhouette": "fitted",
-        "length": "ankle",
-        "cut": "straight",
-        "volume": "regular",
-        "details": [
-          "buttons",
-          "pockets"
-        ]
-      },
-      "derived_properties": {
-        "formality": "casual",
-        "season_suitability": {
-          "spring": true,
-          "summer": true,
-          "fall": true,
-          "winter": true
-        },
-        "style_categories": [
-          "casual",
-          "classic"
-        ],
-        "dress_code_compatibility": [
           "smart_casual",
-          "casual",
           "weekend"
         ]
       },
-      "id": "35",
-      "date_added": "2024-11-16T14:51:20.727366",
-      "image_filename": "clothes73_jpg.rf.191e979146c49d5de00ca1ce8b39ba56.jpg",
-      "image_path": "data/images/clothes73_jpg.rf.191e979146c49d5de00ca1ce8b39ba56.jpg"
+      "id": "20",
+      "date_added": "2024-11-16T16:00:20.144631",
+      "image_filename": "clothes472.jpg",
+      "image_path": "data/images/clothes472.jpg"
     },
     {
       "type": "shirt",
       "category": "tops",
-      "description": "A short-sleeve button-up shirt with a subtle pattern and standard collar.",
+      "description": "A button-up shirt with a collar and short sleeves, featuring a subtle patterned design.",
       "colors": [
         {
-          "name": "dark gray",
-          "hex": "#4B4B4B",
+          "name": "black",
+          "hex": "#000000",
           "temperature": "neutral",
           "intensity": "dark"
         }
@@ -2296,8 +1326,7 @@
           "winter": false
         },
         "style_categories": [
-          "classic",
-          "smart"
+          "classic"
         ],
         "dress_code_compatibility": [
           "smart_casual",
@@ -2305,20 +1334,143 @@
           "weekend"
         ]
       },
-      "id": "36",
-      "date_added": "2024-11-16T14:51:25.992987",
-      "image_filename": "clothes464_jpg.rf.f20d9448a2c65202a896fb2016f151dc.jpg",
-      "image_path": "data/images/clothes464_jpg.rf.f20d9448a2c65202a896fb2016f151dc.jpg"
+      "id": "21",
+      "date_added": "2024-11-16T16:00:23.627997",
+      "image_filename": "clothes464.jpg",
+      "image_path": "data/images/clothes464.jpg"
     },
     {
-      "type": "jacket",
+      "type": "shirt",
       "category": "tops",
-      "description": "A black jacket with a high collar and two silver zipper pockets. It has a fur trim around the collar, cuffs, and hem. The main zipper is diagonal.",
+      "description": "A casual short-sleeve t-shirt with a graphic logo and text on the front.",
       "colors": [
         {
-          "name": "black",
-          "hex": "#000000",
-          "temperature": "neutral",
+          "name": "navy blue",
+          "hex": "#000080",
+          "temperature": "cool",
+          "intensity": "dark"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "solid",
+          "scale": "none",
+          "density": "none",
+          "direction": "none",
+          "regularity": "none"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "knitted"
+        }
+      ],
+      "structure": {
+        "silhouette": "fitted",
+        "length": "hip",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "none"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": false
+        },
+        "style_categories": [
+          "sporty",
+          "casual"
+        ],
+        "dress_code_compatibility": [
+          "smart_casual",
+          "weekend"
+        ]
+      },
+      "id": "22",
+      "date_added": "2024-11-16T16:00:28.335694",
+      "image_filename": "clothes470.jpg",
+      "image_path": "data/images/clothes470.jpg"
+    },
+    {
+      "type": "shirt",
+      "category": "tops",
+      "description": "Short-sleeved, button-up collared shirt with a chest pocket.",
+      "colors": [
+        {
+          "name": "navy blue",
+          "hex": "#1F2A44",
+          "temperature": "cool",
+          "intensity": "dark"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "solid",
+          "scale": "none",
+          "density": "none",
+          "direction": "none",
+          "regularity": "none"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "woven"
+        }
+      ],
+      "structure": {
+        "silhouette": "fitted",
+        "length": "hip",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "collar",
+          "chest_pocket",
+          "buttons"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": false
+        },
+        "style_categories": [
+          "preppy",
+          "classic"
+        ],
+        "dress_code_compatibility": [
+          "smart_casual",
+          "business_casual",
+          "weekend"
+        ]
+      },
+      "id": "23",
+      "date_added": "2024-11-16T16:00:31.923904",
+      "image_filename": "clothes468.jpg",
+      "image_path": "data/images/clothes468.jpg"
+    },
+    {
+      "type": "pants",
+      "category": "bottoms",
+      "description": "These are navy blue pants with a simple design, featuring a straight cut.",
+      "colors": [
+        {
+          "name": "navy blue",
+          "hex": "#000080",
+          "temperature": "cool",
           "intensity": "dark"
         }
       ],
@@ -2336,46 +1488,122 @@
           "surface": "smooth",
           "appearance": "matte",
           "visual_weight": "medium",
-          "material_appearance": "leather"
+          "material_appearance": "woven"
         }
       ],
       "structure": {
         "silhouette": "fitted",
-        "length": "hip",
+        "length": "ankle",
         "cut": "straight",
         "volume": "regular",
         "details": [
-          "collar",
-          "fur_trim",
-          "asymmetric_zip"
+          "none"
         ]
       },
       "derived_properties": {
         "formality": "casual",
         "season_suitability": {
           "spring": true,
-          "summer": false,
+          "summer": true,
           "fall": true,
           "winter": true
         },
         "style_categories": [
-          "edgy",
-          "urban"
+          "classic"
         ],
         "dress_code_compatibility": [
-          "casual",
+          "smart_casual",
           "weekend"
         ]
       },
-      "id": "37",
-      "date_added": "2024-11-16T14:51:33.302221",
-      "image_filename": "clothes52_jpg.rf.e8824d728823784a274f450694dc42b2.jpg",
-      "image_path": "data/images/clothes52_jpg.rf.e8824d728823784a274f450694dc42b2.jpg"
+      "id": "24",
+      "date_added": "2024-11-16T16:00:38.476574",
+      "image_filename": "clothes469.jpg",
+      "image_path": "data/images/clothes469.jpg"
     },
     {
       "type": "shirt",
       "category": "tops",
-      "description": "A basic solid black T-shirt with short sleeves and a crew neckline.",
+      "description": "A casual color-blocked T-shirt with a bold logo print on the front. It has short sleeves and a crew neckline.",
+      "colors": [
+        {
+          "name": "red",
+          "hex": "#FF0000",
+          "temperature": "warm",
+          "intensity": "medium"
+        },
+        {
+          "name": "navy blue",
+          "hex": "#000080",
+          "temperature": "cool",
+          "intensity": "dark"
+        },
+        {
+          "name": "white",
+          "hex": "#FFFFFF",
+          "temperature": "neutral",
+          "intensity": "light"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "solid",
+          "scale": "none",
+          "density": "none",
+          "direction": "none",
+          "regularity": "none"
+        },
+        {
+          "type": "logo",
+          "scale": "large",
+          "density": "medium",
+          "direction": "none",
+          "regularity": "irregular"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "woven"
+        }
+      ],
+      "structure": {
+        "silhouette": "loose",
+        "length": "hip",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "crew_neck"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": false
+        },
+        "style_categories": [
+          "sporty",
+          "streetwear"
+        ],
+        "dress_code_compatibility": [
+          "smart_casual",
+          "weekend"
+        ]
+      },
+      "id": "25",
+      "date_added": "2024-11-16T16:00:42.880195",
+      "image_filename": "00126_00.jpg",
+      "image_path": "data/images/00126_00.jpg"
+    },
+    {
+      "type": "shirt",
+      "category": "tops",
+      "description": "A basic black t-shirt with short sleeves and a round neckline.",
       "colors": [
         {
           "name": "black",
@@ -2420,37 +1648,37 @@
         },
         "style_categories": [
           "basic",
-          "minimalist"
+          "casual"
         ],
         "dress_code_compatibility": [
           "casual",
           "weekend"
         ]
       },
-      "id": "38",
-      "date_added": "2024-11-16T14:51:39.148364",
-      "image_filename": "clothes7_jpg.rf.83e3b9bb3326c7153ee85d824cc61fd9.jpg",
-      "image_path": "data/images/clothes7_jpg.rf.83e3b9bb3326c7153ee85d824cc61fd9.jpg"
+      "id": "26",
+      "date_added": "2024-11-16T16:00:48.921486",
+      "image_filename": "clothes7.jpg",
+      "image_path": "data/images/clothes7.jpg"
     },
     {
       "type": "sweater",
       "category": "tops",
-      "description": "A cropped, knitted sweater with cable knit detailing on the front and ribbed hems.",
+      "description": "A cropped sweater shrug with cable knit detailing on the front and ribbed cuffs.",
       "colors": [
         {
           "name": "beige",
-          "hex": "#D3BFAE",
+          "hex": "#D7B9A3",
           "temperature": "neutral",
           "intensity": "medium"
         }
       ],
       "patterns": [
         {
-          "type": "cable knit",
-          "scale": "medium",
-          "density": "medium",
-          "direction": "vertical",
-          "regularity": "regular"
+          "type": "solid",
+          "scale": "none",
+          "density": "none",
+          "direction": "none",
+          "regularity": "none"
         }
       ],
       "textures": [
@@ -2467,8 +1695,8 @@
         "cut": "straight",
         "volume": "regular",
         "details": [
-          "collar",
-          "buttons"
+          "buttons",
+          "cable_knit"
         ]
       },
       "derived_properties": {
@@ -2481,22 +1709,154 @@
         },
         "style_categories": [
           "classic",
-          "cozy"
+          "chic"
+        ],
+        "dress_code_compatibility": [
+          "casual",
+          "smart_casual"
+        ]
+      },
+      "id": "27",
+      "date_added": "2024-11-16T16:00:55.886897",
+      "image_filename": "clothes6.jpg",
+      "image_path": "data/images/clothes6.jpg"
+    },
+    {
+      "type": "shirt",
+      "category": "tops",
+      "description": "A puffy, short-sleeved shirt with a V-neck, featuring horizontal padded sections.",
+      "colors": [
+        {
+          "name": "light beige",
+          "hex": "#F5F5DC",
+          "temperature": "neutral",
+          "intensity": "light"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "solid",
+          "scale": "none",
+          "density": "none",
+          "direction": "none",
+          "regularity": "none"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "quilted",
+          "appearance": "matte",
+          "visual_weight": "medium",
+          "material_appearance": "none"
+        }
+      ],
+      "structure": {
+        "silhouette": "loose",
+        "length": "hip",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "none"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": false,
+          "fall": true,
+          "winter": true
+        },
+        "style_categories": [
+          "sporty",
+          "casual"
+        ],
+        "dress_code_compatibility": [
+          "casual",
+          "weekend"
+        ]
+      },
+      "id": "28",
+      "date_added": "2024-11-16T16:01:01.753270",
+      "image_filename": "clothes81.jpg",
+      "image_path": "data/images/clothes81.jpg"
+    },
+    {
+      "type": "shirt",
+      "category": "tops",
+      "description": "A striped, long-sleeve shirt with a yellow contrast trim on the neckline and sleeves.",
+      "colors": [
+        {
+          "name": "navy blue",
+          "hex": "#000080",
+          "temperature": "cool",
+          "intensity": "dark"
+        },
+        {
+          "name": "white",
+          "hex": "#FFFFFF",
+          "temperature": "neutral",
+          "intensity": "light"
+        },
+        {
+          "name": "yellow",
+          "hex": "#FFD700",
+          "temperature": "warm",
+          "intensity": "medium"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "striped",
+          "scale": "medium",
+          "density": "medium",
+          "direction": "horizontal",
+          "regularity": "regular"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "woven"
+        }
+      ],
+      "structure": {
+        "silhouette": "fitted",
+        "length": "hip",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "none"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": false
+        },
+        "style_categories": [
+          "nautical",
+          "casual"
         ],
         "dress_code_compatibility": [
           "smart_casual",
           "weekend"
         ]
       },
-      "id": "39",
-      "date_added": "2024-11-16T14:51:52.458577",
-      "image_filename": "clothes6_jpg.rf.cc194ee0b7452fe633bdb11e4f8bfcf4.jpg",
-      "image_path": "data/images/clothes6_jpg.rf.cc194ee0b7452fe633bdb11e4f8bfcf4.jpg"
+      "id": "29",
+      "date_added": "2024-11-16T16:01:07.977718",
+      "image_filename": "00151_00.jpg",
+      "image_path": "data/images/00151_00.jpg"
     },
     {
       "type": "shoes",
       "category": "one-pieces",
-      "description": "White flat sandals with strappy design and gold buckle detail, featuring an open toe and ankle strap.",
+      "description": "A pair of white sandals with a flat sole, adjustable ankle straps, and decorative metal buckles.",
       "colors": [
         {
           "name": "white",
@@ -2519,7 +1879,270 @@
           "surface": "smooth",
           "appearance": "matte",
           "visual_weight": "light",
-          "material_appearance": "leather"
+          "material_appearance": "none"
+        }
+      ],
+      "structure": {
+        "silhouette": "fitted",
+        "length": "ankle",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "buckles",
+          "straps"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": false
+        },
+        "style_categories": [
+          "casual",
+          "bohemian"
+        ],
+        "dress_code_compatibility": [
+          "casual",
+          "beach",
+          "weekend"
+        ]
+      },
+      "id": "30",
+      "date_added": "2024-11-16T16:01:13.797252",
+      "image_filename": "clothes82.jpg",
+      "image_path": "data/images/clothes82.jpg"
+    },
+    {
+      "type": "hoodie",
+      "category": "tops",
+      "description": "A casual gray zip-up hoodie with a hood, ribbed cuffs, and pockets.",
+      "colors": [
+        {
+          "name": "gray",
+          "hex": "#808080",
+          "temperature": "neutral",
+          "intensity": "medium"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "solid",
+          "scale": "none",
+          "density": "none",
+          "direction": "none",
+          "regularity": "none"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "medium",
+          "material_appearance": "knitted"
+        }
+      ],
+      "structure": {
+        "silhouette": "loose",
+        "length": "hip",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "hood",
+          "front_pocket",
+          "zipper"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": false,
+          "fall": true,
+          "winter": true
+        },
+        "style_categories": [
+          "athleisure",
+          "casual"
+        ],
+        "dress_code_compatibility": [
+          "weekend",
+          "casual"
+        ]
+      },
+      "id": "31",
+      "date_added": "2024-11-16T16:01:18.780858",
+      "image_filename": "clothes55.jpg",
+      "image_path": "data/images/clothes55.jpg"
+    },
+    {
+      "type": "cardigan",
+      "category": "tops",
+      "description": "A long, ribbed knit cardigan with long sleeves and an open front.",
+      "colors": [
+        {
+          "name": "gray",
+          "hex": "#808080",
+          "temperature": "neutral",
+          "intensity": "medium"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "solid",
+          "scale": "none",
+          "density": "none",
+          "direction": "none",
+          "regularity": "none"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "ribbed",
+          "appearance": "matte",
+          "visual_weight": "medium",
+          "material_appearance": "knitted"
+        }
+      ],
+      "structure": {
+        "silhouette": "loose",
+        "length": "knee",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "none"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": true
+        },
+        "style_categories": [
+          "casual",
+          "comfortable"
+        ],
+        "dress_code_compatibility": [
+          "smart_casual",
+          "weekend"
+        ]
+      },
+      "id": "32",
+      "date_added": "2024-11-16T16:01:23.918690",
+      "image_filename": "clothes97.jpg",
+      "image_path": "data/images/clothes97.jpg"
+    },
+    {
+      "type": "hat",
+      "category": "accessories",
+      "description": "A knit winter hat featuring a predominantly white crown with a navy blue, red, and white band around the lower edge. The band has text and design elements.",
+      "colors": [
+        {
+          "name": "white",
+          "hex": "#FFFFFF",
+          "temperature": "neutral",
+          "intensity": "light"
+        },
+        {
+          "name": "navy blue",
+          "hex": "#000080",
+          "temperature": "cool",
+          "intensity": "dark"
+        },
+        {
+          "name": "red",
+          "hex": "#FF0000",
+          "temperature": "warm",
+          "intensity": "medium"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "abstract",
+          "scale": "medium",
+          "density": "medium",
+          "direction": "irregular",
+          "regularity": "irregular"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "knitted",
+          "appearance": "matte",
+          "visual_weight": "medium",
+          "material_appearance": "knitted"
+        }
+      ],
+      "structure": {
+        "silhouette": "fitted",
+        "length": "top of head",
+        "cut": "curved",
+        "volume": "regular",
+        "details": [
+          "text",
+          "pattern"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": false,
+          "fall": true,
+          "winter": true
+        },
+        "style_categories": [
+          "sporty",
+          "casual"
+        ],
+        "dress_code_compatibility": [
+          "weekend",
+          "outdoor"
+        ]
+      },
+      "id": "33",
+      "date_added": "2024-11-16T16:01:33.031821",
+      "image_filename": "clothes87.jpg",
+      "image_path": "data/images/clothes87.jpg"
+    },
+    {
+      "type": "pants",
+      "category": "bottoms",
+      "description": "A pair of gradient black to white skinny jeans with classic pocket details.",
+      "colors": [
+        {
+          "name": "black",
+          "hex": "#000000",
+          "temperature": "neutral",
+          "intensity": "dark"
+        },
+        {
+          "name": "white",
+          "hex": "#FFFFFF",
+          "temperature": "neutral",
+          "intensity": "light"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "solid",
+          "scale": "none",
+          "density": "none",
+          "direction": "none",
+          "regularity": "none"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "medium",
+          "material_appearance": "denim"
         }
       ],
       "structure": {
@@ -2528,8 +2151,149 @@
         "cut": "straight",
         "volume": "slim",
         "details": [
-          "ankle strap",
-          "buckle"
+          "pockets",
+          "button",
+          "zipper"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": true
+        },
+        "style_categories": [
+          "edgy",
+          "modern"
+        ],
+        "dress_code_compatibility": [
+          "smart_casual",
+          "weekend"
+        ]
+      },
+      "id": "34",
+      "date_added": "2024-11-16T16:01:38.356124",
+      "image_filename": "clothes93.jpg",
+      "image_path": "data/images/clothes93.jpg"
+    },
+    {
+      "type": "shirt",
+      "category": "tops",
+      "description": "A light blue, long-sleeved shirt with a small collar, partial button placket, and faint white horizontal stripes.",
+      "colors": [
+        {
+          "name": "light blue",
+          "hex": "#ADD8E6",
+          "temperature": "cool",
+          "intensity": "light"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "striped",
+          "scale": "small",
+          "density": "medium",
+          "direction": "horizontal",
+          "regularity": "regular"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "woven"
+        }
+      ],
+      "structure": {
+        "silhouette": "fitted",
+        "length": "hip",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "collar",
+          "buttons"
+        ]
+      },
+      "derived_properties": {
+        "formality": "business casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": false
+        },
+        "style_categories": [
+          "preppy",
+          "classic"
+        ],
+        "dress_code_compatibility": [
+          "smart_casual",
+          "business_casual",
+          "weekend"
+        ]
+      },
+      "id": "35",
+      "date_added": "2024-11-16T16:01:42.657593",
+      "image_filename": "clothes78.jpg",
+      "image_path": "data/images/clothes78.jpg"
+    },
+    {
+      "type": "dress",
+      "category": "one-pieces",
+      "description": "A black dress with a floral pattern, featuring short sleeves and a round neckline.",
+      "colors": [
+        {
+          "name": "black",
+          "hex": "#000000",
+          "temperature": "neutral",
+          "intensity": "dark"
+        },
+        {
+          "name": "green",
+          "hex": "#008000",
+          "temperature": "cool",
+          "intensity": "medium"
+        },
+        {
+          "name": "white",
+          "hex": "#FFFFFF",
+          "temperature": "neutral",
+          "intensity": "light"
+        },
+        {
+          "name": "pink",
+          "hex": "#FFC0CB",
+          "temperature": "warm",
+          "intensity": "light"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "floral",
+          "scale": "medium",
+          "density": "medium",
+          "direction": "irregular",
+          "regularity": "irregular"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "woven"
+        }
+      ],
+      "structure": {
+        "silhouette": "flowing",
+        "length": "knee",
+        "cut": "curved",
+        "volume": "regular",
+        "details": [
+          "round neckline"
         ]
       },
       "derived_properties": {
@@ -2541,8 +2305,249 @@
           "winter": false
         },
         "style_categories": [
-          "classic",
-          "minimalist"
+          "bohemian",
+          "feminine"
+        ],
+        "dress_code_compatibility": [
+          "casual",
+          "weekend"
+        ]
+      },
+      "id": "36",
+      "date_added": "2024-11-16T16:01:47.266195",
+      "image_filename": "clothes79.jpg",
+      "image_path": "data/images/clothes79.jpg"
+    },
+    {
+      "type": "shirt",
+      "category": "tops",
+      "description": "A blue short-sleeve shirt with a zipper and piping details on the collar and sleeves.",
+      "colors": [
+        {
+          "name": "blue",
+          "hex": "#1E90FF",
+          "temperature": "cool",
+          "intensity": "medium"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "solid",
+          "scale": "none",
+          "density": "none",
+          "direction": "none",
+          "regularity": "none"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "woven"
+        }
+      ],
+      "structure": {
+        "silhouette": "fitted",
+        "length": "hip",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "zipper"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": false
+        },
+        "style_categories": [
+          "sporty",
+          "casual"
+        ],
+        "dress_code_compatibility": [
+          "smart_casual",
+          "weekend"
+        ]
+      },
+      "id": "37",
+      "date_added": "2024-11-16T16:01:53.102373",
+      "image_filename": "clothes92.jpg",
+      "image_path": "data/images/clothes92.jpg"
+    },
+    {
+      "type": "skirt",
+      "category": "bottoms",
+      "description": "A midi-length, flared skirt with a polka dot pattern featuring thin straps.",
+      "colors": [
+        {
+          "name": "navy blue",
+          "hex": "#000080",
+          "temperature": "cool",
+          "intensity": "dark"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "polka_dot",
+          "scale": "small",
+          "density": "medium",
+          "direction": "none",
+          "regularity": "regular"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "woven"
+        }
+      ],
+      "structure": {
+        "silhouette": "flowing",
+        "length": "knee",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "none"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": false
+        },
+        "style_categories": [
+          "retro",
+          "casual"
+        ],
+        "dress_code_compatibility": [
+          "smart_casual",
+          "weekend"
+        ]
+      },
+      "id": "38",
+      "date_added": "2024-11-16T16:01:56.920197",
+      "image_filename": "clothes86.jpg",
+      "image_path": "data/images/clothes86.jpg"
+    },
+    {
+      "type": "shirt",
+      "category": "tops",
+      "description": "A basic short-sleeve t-shirt with a round neckline and slightly gathered sleeves.",
+      "colors": [
+        {
+          "name": "lavender",
+          "hex": "#E6E6FA",
+          "temperature": "cool",
+          "intensity": "light"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "solid",
+          "scale": "none",
+          "density": "none",
+          "direction": "none",
+          "regularity": "none"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "knitted"
+        }
+      ],
+      "structure": {
+        "silhouette": "fitted",
+        "length": "hip",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "none"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": false
+        },
+        "style_categories": [
+          "casual"
+        ],
+        "dress_code_compatibility": [
+          "smart_casual",
+          "weekend"
+        ]
+      },
+      "id": "39",
+      "date_added": "2024-11-16T16:02:00.651526",
+      "image_filename": "clothes47.jpg",
+      "image_path": "data/images/clothes47.jpg"
+    },
+    {
+      "type": "jacket",
+      "category": "tops",
+      "description": "A black, structured jacket with asymmetrical front zipper closure, two side zip pockets, and a high collar with buckle straps. It features a plush lining visible at the cuffs and hem.",
+      "colors": [
+        {
+          "name": "black",
+          "hex": "#000000",
+          "temperature": "neutral",
+          "intensity": "dark"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "solid",
+          "scale": "none",
+          "density": "none",
+          "direction": "none",
+          "regularity": "none"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "heavy",
+          "material_appearance": "woven"
+        }
+      ],
+      "structure": {
+        "silhouette": "structured",
+        "length": "hip",
+        "cut": "asymmetric",
+        "volume": "regular",
+        "details": [
+          "collar",
+          "buttons",
+          "chest_zip_pocket"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": false,
+          "summer": false,
+          "fall": true,
+          "winter": true
+        },
+        "style_categories": [
+          "edgy",
+          "urban"
         ],
         "dress_code_compatibility": [
           "casual",
@@ -2550,9 +2555,141 @@
         ]
       },
       "id": "40",
-      "date_added": "2024-11-16T15:24:04.970696",
-      "image_filename": "clothes82_jpg.rf.5c16357608bde75d4ff54d3f7c28e7ae.jpg",
-      "image_path": "data/images/clothes82_jpg.rf.5c16357608bde75d4ff54d3f7c28e7ae.jpg"
+      "date_added": "2024-11-16T16:02:04.881472",
+      "image_filename": "clothes52.jpg",
+      "image_path": "data/images/clothes52.jpg"
+    },
+    {
+      "type": "shirt",
+      "category": "tops",
+      "description": "A casual, short-sleeve T-shirt featuring a color block design with horizontal stripes in red, white, and navy blue, and a prominent logo on the chest.",
+      "colors": [
+        {
+          "name": "red",
+          "hex": "#FF0000",
+          "temperature": "warm",
+          "intensity": "medium"
+        },
+        {
+          "name": "white",
+          "hex": "#FFFFFF",
+          "temperature": "neutral",
+          "intensity": "light"
+        },
+        {
+          "name": "navy blue",
+          "hex": "#000080",
+          "temperature": "cool",
+          "intensity": "dark"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "color_block",
+          "scale": "large",
+          "density": "medium",
+          "direction": "horizontal",
+          "regularity": "regular"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "none"
+        }
+      ],
+      "structure": {
+        "silhouette": "loose",
+        "length": "hip",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "none"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": false
+        },
+        "style_categories": [
+          "sporty",
+          "casual"
+        ],
+        "dress_code_compatibility": [
+          "smart_casual",
+          "weekend"
+        ]
+      },
+      "id": "41",
+      "date_added": "2024-11-16T16:02:31.089763",
+      "image_filename": "00126_00.jpg",
+      "image_path": "data/images/00126_00.jpg"
+    },
+    {
+      "type": "shirt",
+      "category": "tops",
+      "description": "A casual gray t-shirt with a graphic print featuring a speech bubble with the text 'WHAT'S UP?' and a small character near the neckline.",
+      "colors": [
+        {
+          "name": "gray",
+          "hex": "#808080",
+          "temperature": "neutral",
+          "intensity": "medium"
+        }
+      ],
+      "patterns": [
+        {
+          "type": "graphic",
+          "scale": "medium",
+          "density": "medium",
+          "direction": "irregular",
+          "regularity": "irregular"
+        }
+      ],
+      "textures": [
+        {
+          "surface": "smooth",
+          "appearance": "matte",
+          "visual_weight": "light",
+          "material_appearance": "woven"
+        }
+      ],
+      "structure": {
+        "silhouette": "fitted",
+        "length": "hip",
+        "cut": "straight",
+        "volume": "regular",
+        "details": [
+          "none"
+        ]
+      },
+      "derived_properties": {
+        "formality": "casual",
+        "season_suitability": {
+          "spring": true,
+          "summer": true,
+          "fall": true,
+          "winter": false
+        },
+        "style_categories": [
+          "streetwear",
+          "casual"
+        ],
+        "dress_code_compatibility": [
+          "weekend",
+          "casual"
+        ]
+      },
+      "id": "42",
+      "date_added": "2024-11-16T16:33:29.131973",
+      "image_filename": "clothes70.jpg",
+      "image_path": "data/images/clothes70.jpg"
     }
   ]
 }
